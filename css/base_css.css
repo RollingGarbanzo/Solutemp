@@ -1,0 +1,34 @@
+#body{
+  height: 1200px;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0.13, #2A9BA8),
+		color-stop(1, #0F7BD4)
+	);
+	background-image: -o-linear-gradient(bottom, #2A9BA8 13%, #0F7BD4 100%);
+	background-image: -moz-linear-gradient(bottom, #2A9BA8 13%, #0F7BD4 100%);
+	background-image: -webkit-linear-gradient(bottom, #2A9BA8 13%, #0F7BD4 100%);
+	background-image: -ms-linear-gradient(bottom, #2A9BA8 13%, #0F7BD4 100%);
+	background-image: linear-gradient(to bottom, #2A9BA8 13%, #0F7BD4 100%);
+}
+
+#icono{
+  width: 20%;
+  height: 15%;
+  /*background-color: red;*/
+  float: left;
+}
+#encabezado{
+  width: 80%;
+  height: 15%;
+  /*background-color: blue;*/
+  float: left;
+}
+#cuerpo{
+  width: 100%;
+  height: 85%;
+  float: left;
+  /*background-color: green;*/
+}
