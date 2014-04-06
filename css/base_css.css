@@ -25,6 +25,16 @@ body{
   background-color: red;
   float: left;
 }
+
+#icono img{
+
+	width: 100%;
+	height: 100%;
+
+	max-width: 100%;
+	max-height: 100%;
+}
+
 #encabezado{
   width: 80%;
   height: 15%;
@@ -106,12 +116,19 @@ ul.nav a {
 
 	color: black !important;
 
-	border-top-right-radius: 2px;
-	border-top-left-radius: 2px;
+	margin-right: 1em;
+
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 	background-color: #AAAAAA;
 }
 
 ul.nav a:hover {
+
+	margin-right: 1em;
+
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
 
 	color: grey !important;
 }
