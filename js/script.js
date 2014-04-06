@@ -3,7 +3,7 @@ $(document).ready(function(){
 
 	$(window).on("resize", methodToFixLayout);
 
-	$("#inicioB").addClass("active");
+	$(".inicioB").addClass("active");
 	$("#contactosB").removeClass("active");
 	$("#quienesB").removeClass("active");
 
@@ -14,9 +14,9 @@ $(document).ready(function(){
 	$("#ofertas").hide();
 	$("#servicios").hide();
 
-	$("#inicioB").click(function(){
+	$(".inicioB").click(function(){
 
-		$("#inicioB").addClass("active");
+		$(".inicioB").addClass("active");
 		$("#contactosB").removeClass("active");
 		$("#quienesB").removeClass("active");
 		$("#ofertasB").removeClass("active");
@@ -34,7 +34,7 @@ $(document).ready(function(){
 	$("#contactosB").click(function(){
 
 
-		$("#inicioB").removeClass("active");
+		$(".inicioB").removeClass("active");
 		$("#contactosB").addClass("active");
 		$("#quienesB").removeClass("active");
 		$("#ofertasB").removeClass("active");
@@ -49,7 +49,7 @@ $(document).ready(function(){
 
 	$("#quienesB").click(function(){
 
-		$("#inicioB").removeClass("active");
+		$(".inicioB").removeClass("active");
 		$("#contactosB").removeClass("active");
 		$("#quienesB").addClass("active");
 		$("#ofertasB").removeClass("active");
@@ -64,7 +64,7 @@ $(document).ready(function(){
 
 	$("#ofertasB").click(function(){
 
-		$("#inicioB").removeClass("active");
+		$(".inicioB").removeClass("active");
 		$("#contactosB").removeClass("active");
 		$("#quienesB").removeClass("active");
 		$("#ofertasB").addClass("active");
@@ -79,7 +79,7 @@ $(document).ready(function(){
 
 	$("#serviciosB").click(function(){
 
-		$("#inicioB").removeClass("active");
+		$(".inicioB").removeClass("active");
 		$("#contactosB").removeClass("active");
 		$("#quienesB").removeClass("active");
 		$("#ofertasB").removeClass("active");

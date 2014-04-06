@@ -25,11 +25,9 @@ div{
   background-color: red;
   float: left;
 
-  opacity: 0.8;
-  filter: alpha(opacity = 80); /* For IE */
 }
 
-#icono img{
+#icono img, #encabezado img{
 
 	width: 100%;
 	height: 100%;
@@ -41,15 +39,16 @@ div{
 #encabezado{
   width: 80%;
   height: 15%;
-  background-color: red;
+  margin-left: 10%;
+  /*background-color: red;*/
   float: left;
 }
 
 #cuerpo{
   
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 
   float: left;
 
@@ -64,7 +63,7 @@ div{
 
 #dentroTabla{
 
-	min-height: 500px;
+	min-height: 600px;
 	margin-bottom: 3em;
 
 	width: 100%;
@@ -80,7 +79,6 @@ div{
 
 #pestanas{
 
-	/*padding-left: 5px;*/
 	padding-right: 5px;
 }
 
@@ -106,6 +104,45 @@ div{
 	height: 50%;
 }
 
+#pieDePagina{
+
+	margin-left: 5%;
+	margin-bottom: 2em;
+
+	width: 90%;
+
+}
+
+.interiorDiv{
+
+	height: 125px;
+
+	width: 33.33%;
+
+	float: left;
+
+	/*background-color: white;*/
+
+}
+
+.contenedorDiv{
+
+	margin-left: 15%;
+	margin-right: 15%;
+
+	margin-top: 1.2%;
+
+	min-height: 90%;
+
+	width: 70%;
+
+}
+
+.contenedorDiv p{
+
+	margin-left: 1em;
+}
+
 img{
 
 	max-width: 80%;
@@ -120,7 +157,7 @@ ul.nav a {
 
 	color: black !important;
 
-	margin-right: 1em;
+	margin-right: 0.5em;
 
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
@@ -129,7 +166,7 @@ ul.nav a {
 
 ul.nav a:hover {
 
-	margin-right: 1em;
+	margin-right: 0.5em;
 
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
