@@ -1,22 +1,22 @@
 body{
 
-	background-color: grey;
+	background-color: blue;
+	background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(41,137,216,0.97) 5%, rgba(32,124,202,0.83) 34%, rgba(32,124,202,0.8) 39%, rgba(78,154,217,0.65) 69%, rgba(125,185,232,0.65) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(5%,rgba(41,137,216,0.97)), color-stop(34%,rgba(32,124,202,0.83)), color-stop(39%,rgba(32,124,202,0.8)), color-stop(69%,rgba(78,154,217,0.65)), color-stop(100%,rgba(125,185,232,0.65))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,0.97) 5%,rgba(32,124,202,0.83) 34%,rgba(32,124,202,0.8) 39%,rgba(78,154,217,0.65) 69%,rgba(125,185,232,0.65) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,0.97) 5%,rgba(32,124,202,0.83) 34%,rgba(32,124,202,0.8) 39%,rgba(78,154,217,0.65) 69%,rgba(125,185,232,0.65) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(41,137,216,0.97) 5%,rgba(32,124,202,0.83) 34%,rgba(32,124,202,0.8) 39%,rgba(78,154,217,0.65) 69%,rgba(125,185,232,0.65) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(41,137,216,0.97) 5%,rgba(32,124,202,0.83) 34%,rgba(32,124,202,0.8) 39%,rgba(78,154,217,0.65) 69%,rgba(125,185,232,0.65) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#a67db9e8',GradientType=0 ); /* IE6-9 */
 
-	background-image: -webkit-gradient(
-		linear,
-		left top,
-		left bottom,
-		color-stop(0.13, #2A9BA8),
-		color-stop(1, #0F7BD4)
-	);
-	background-image: -o-linear-gradient(bottom, #2A9BA8 13%, #0F7BD4 100%);
-	background-image: -moz-linear-gradient(bottom, #2A9BA8 13%, #0F7BD4 100%);
-	background-image: -webkit-linear-gradient(bottom, #2A9BA8 13%, #0F7BD4 100%);
-	background-image: -ms-linear-gradient(bottom, #2A9BA8 13%, #0F7BD4 100%);
-	background-image: linear-gradient(to bottom, #2A9BA8 13%, #0F7BD4 100%);
+	background-attachment: fixed;
 
+	overflow: scroll;
+}
 
-	background-position: fixed;
+div{
+
+	overflow:hidden;
 }
 
 #icono{
@@ -24,6 +24,9 @@ body{
   height: 15%;
   background-color: red;
   float: left;
+
+  opacity: 0.8;
+  filter: alpha(opacity = 80); /* For IE */
 }
 
 #icono img{
@@ -38,15 +41,16 @@ body{
 #encabezado{
   width: 80%;
   height: 15%;
-  background-color: blue;
+  background-color: red;
   float: left;
 }
+
 #cuerpo{
   
-  min-width: 80%;
+  width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  /*height: 85%;*/
+
   float: left;
 
 }
@@ -60,7 +64,7 @@ body{
 
 #dentroTabla{
 
-	min-height: 60%;
+	min-height: 500px;
 	margin-bottom: 3em;
 
 	width: 100%;
