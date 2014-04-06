@@ -37,6 +37,9 @@ div{
 }
 
 #encabezado{
+
+  margin-top: 2em;
+
   width: 80%;
   height: 15%;
   margin-left: 10%;
@@ -107,38 +110,39 @@ div{
 #pieDePagina{
 
 	margin-left: 5%;
-	margin-bottom: 2em;
+	margin-bottom: 0.5em;
+
+	min-height: 150px;
 
 	width: 90%;
 
+	font-size: 11;
+
+	float: left;
 }
 
-.interiorDiv{
+.interiorPie{
 
-	height: 125px;
+	min-height: 150px;
 
 	width: 33.33%;
 
 	float: left;
 
-	/*background-color: white;*/
-
 }
 
-.contenedorDiv{
+.contenedorPie{
 
 	margin-left: 15%;
-	margin-right: 15%;
-
-	margin-top: 1.2%;
-
-	min-height: 90%;
+	/*margin-right: 15%;*/
 
 	width: 70%;
 
+	float: left;
+
 }
 
-.contenedorDiv p{
+.contenedorPie p{
 
 	margin-left: 1em;
 }
