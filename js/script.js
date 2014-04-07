@@ -7,12 +7,29 @@ $(document).ready(function(){
 	$("#contactosB").removeClass("active");
 	$("#quienesB").removeClass("active");
 
+	$("#encabezado").hide();
+	$("#cuerpo").hide();
+	$("#pieDePagina").hide();
+
 	$("#inicio").hide();
-	$("#inicio").fadeIn("slow");
 	$("#contactos").hide();
 	$("#quienes").hide();
 	$("#ofertas").hide();
 	$("#servicios").hide();
+
+	$("#encabezado").fadeIn(200, function(){
+		
+		$("#cuerpo").fadeIn(300, function(){
+
+			$("#inicio").fadeIn(150, function(){
+
+				$("#pieDePagina").fadeIn("slow");
+	
+			});
+	
+		});
+
+	});
 
 	$(".inicioB").click(function(){
 
