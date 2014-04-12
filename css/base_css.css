@@ -180,10 +180,26 @@ ul.nav a:hover {
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 
-	color: grey !important;
 }
 
 li.active a {
 
 	color: black !important;
+}
+
+li a:hover {
+
+	color: blue !important;
+
+	cursor: pointer;
+
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+li.active a:hover {
+
+	color: black  !important;
 }
