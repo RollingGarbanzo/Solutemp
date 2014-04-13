@@ -219,6 +219,18 @@ div{
 	float: left;
 }
 
+#bottom{
+
+	font-size: 10;
+
+	text-align: center;
+	width: 100%;
+
+	color: #444444;
+
+	background-color: rgba(0,0,0,0.1);
+}
+
 .interiorPie{
 
 	min-height: 150px;
