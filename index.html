@@ -7,9 +7,13 @@
 	  <!--<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">-->
 	  <link rel="stylesheet" type="text/css" href="./css/base_css.css">
 	  <meta charset='utf-8'/>
+	  
 
 	  <a href="#Inicio"></a>
 
+	  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	  
   </head>
   <body>
   	<script type="text/javascript" src="./js/jquery-1.11.0.js"></script>
@@ -17,7 +21,44 @@
 
     
     <div id="sliderShow">
-
+		<div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
+    		<!-- numero de imagenes en el slider -->
+        	<ol class="carousel-indicators">
+            	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            	<li data-target="#myCarousel" data-slide-to="1"></li>
+            	<li data-target="#myCarousel" data-slide-to="2"></li>
+        	</ol>   
+       		<!-- items del slider-->
+        	<div class="carousel-inner">
+            	<div class="active item">
+            		<img src="img/solutemp_encabezado.jpg">
+                	<div class="carousel-caption">
+                  	<h3>Primer Slide</h3>
+                  	<p>Logo de SOLUTEMP.</p>
+                </div>
+            </div>
+            <div class="item">
+            	<img src="img/solutemp_icono.jpg">
+                <div class="carousel-caption">
+                  <h3>Segundo Slide>
+                  <p>Tarjeta de contacto de SOLUTEMP</p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel-caption">
+                  <h3>Tercer Slide</h3>
+                  <p>Slide sin imagen.</p>
+                </div>
+            </div>
+        </div>
+        <!-- navegador del slider -->
+        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div>
 		
 		
 	</div>
