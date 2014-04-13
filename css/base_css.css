@@ -248,6 +248,8 @@ ul.nav a:hover {
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 
+	background-color: #CCCCCC;
+
 }
 
 li.active a {
@@ -257,7 +259,7 @@ li.active a {
 
 li a:hover {
 
-	color: blue !important;
+	color: #1B0A2A !important;
 
 	cursor: pointer;
 

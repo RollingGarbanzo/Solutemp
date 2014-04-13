@@ -16,16 +16,15 @@ $(document).ready(function(){
 	$("#quienes").hide();
 	$("#ofertas").hide();
 	$("#servicios").hide();
+	$("#sliderShow").hide();
 
 	$("#encabezado").fadeIn(200, function(){
 		
-		$("#cuerpo").fadeIn(300, function(){
+		$("#sliderShow").fadeIn(350);
+		$("#cuerpo").fadeIn(350, function(){
 
-			$("#inicio").fadeIn(150, function(){
-
-				$("#pieDePagina").fadeIn("slow");
-	
-			});
+			$("#inicio").fadeIn("slow");
+			$("#pieDePagina").fadeIn(200);
 	
 		});
 
@@ -115,7 +114,7 @@ $(document).ready(function(){
 		$("#cuerpo").stop();
 		$("#encabezado").stop();
 
-		$("#hoverSlider").animate({height: "500px"}, 600);
+		$("#hoverSlider").animate({height: "500px"}, 400);
 		$("#cuerpo").animate({marginTop:"5px"}, 400);
 		$("#encabezado").animate({marginTop:"-1em"}, 600, function(){
 
@@ -145,7 +144,7 @@ $(document).ready(function(){
 		$("#sliderShow").css("z-index", "0");
 		$("#encabezado").css("z-index", "1");
 
-		$("#hoverSlider").animate({height: "500px"}, 600);
+		$("#hoverSlider").animate({height: "500px"}, 400);
 		$("#cuerpo").animate({marginTop:"5px"}, 400);
 		$("#encabezado").animate({marginTop:"-1em"}, 600);
 
