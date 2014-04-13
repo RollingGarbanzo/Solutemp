@@ -78,9 +78,9 @@ div{
 	margin-top: 10%;
 	margin-left: 10%;
 
-	background-color: red;
+	/*background-color: red;*/
 	
-	z-index: -10;
+	z-index: -1;
 }
 
 #encabezadoImagen{
@@ -101,12 +101,32 @@ div{
 	margin-top: 1%;
 
 	width: 70%;
-	margin-left: 15%;
-	margin-right: 15%;
+	margin-left: 14%;
+	margin-right: 14%;
+
+	padding-left: 1%;
+	padding-right: 1%;
+	padding-bottom: 1%;
+
+	margin-bottom: 3em;
+
+	border-radius: 10px;
 
 	float: left;
 
+	background-color: rgba(0,0,0,0.2);
 }
+
+#myCarousel{
+
+	height: 500px;
+}
+
+#myCarousel .item{
+
+	height: 500px;
+}
+
 
 #tabla{
 
@@ -119,7 +139,6 @@ div{
 #dentroTabla{
 
 	min-height: 600px;
-	margin-bottom: 3em;
 
 	width: 100%;
 

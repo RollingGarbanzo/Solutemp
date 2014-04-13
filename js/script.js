@@ -115,6 +115,35 @@ $(document).ready(function(){
 		$("#cuerpo").stop();
 		$("#encabezado").stop();
 
+
+		$("#hoverSlider").animate({height: "500px"}, 600);
+		$("#cuerpo").animate({marginTop:"5px"}, 400);
+		$("#encabezado").animate({marginTop:"-1em"}, 600, function(){
+
+			$("#sliderShow").css("z-index", "0");
+		});
+
+	}, function() {
+
+		$("#hoverSlider").stop();
+		$("#cuerpo").stop();
+		$("#encabezado").stop();
+
+		$("#sliderShow").css("z-index", "-1");
+
+		$("#hoverSlider").animate({height: "200px"}, 600);
+		$("#cuerpo").animate({marginTop:"0px"}, 400);
+		$("#encabezado").animate({marginTop:"1em"}, 600);
+	});
+
+	$("#sliderShow").hover( function() {
+
+		$("#hoverSlider").stop();
+		$("#cuerpo").stop();
+		$("#encabezado").stop();
+
+		$("#sliderShow").css("z-index", "0");
+
 		$("#hoverSlider").animate({height: "500px"}, 600);
 		$("#cuerpo").animate({marginTop:"5px"}, 400);
 		$("#encabezado").animate({marginTop:"-1em"}, 600);
@@ -124,6 +153,8 @@ $(document).ready(function(){
 		$("#hoverSlider").stop();
 		$("#cuerpo").stop();
 		$("#encabezado").stop();
+
+		$("#sliderShow").css("z-index", "-1");
 
 		$("#hoverSlider").animate({height: "200px"}, 600);
 		$("#cuerpo").animate({marginTop:"0px"}, 400);
