@@ -111,15 +111,23 @@ $(document).ready(function(){
 
 	$("#hoverSlider").hover( function() {
 
-		$("#hoverSlider").animate({height: "+=300px"}, 600);
-		$("#cuerpo").animate({marginTop:"20px"}, 400);
-		$("#encabezado").animate({marginTop:"-=20px"}, 600);
+		$("#hoverSlider").stop();
+		$("#cuerpo").stop();
+		$("#encabezado").stop();
+
+		$("#hoverSlider").animate({height: "500px"}, 600);
+		$("#cuerpo").animate({marginTop:"5px"}, 400);
+		$("#encabezado").animate({marginTop:"-1em"}, 600);
 
 	}, function() {
 
-		$("#hoverSlider").animate({height: "-=300px"}, 600);
-		$("#cuerpo").animate({marginTop:"-=20px"}, 400);
-		$("#encabezado").animate({marginTop:"+=20px"}, 600);
+		$("#hoverSlider").stop();
+		$("#cuerpo").stop();
+		$("#encabezado").stop();
+
+		$("#hoverSlider").animate({height: "200px"}, 600);
+		$("#cuerpo").animate({marginTop:"0px"}, 400);
+		$("#encabezado").animate({marginTop:"1em"}, 600);
 	});
 }); 
 
