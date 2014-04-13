@@ -109,7 +109,18 @@ $(document).ready(function(){
 		$("#servicios").fadeIn("slow");
 	});
 
+	$("#hoverSlider").hover( function() {
 
+		$("#hoverSlider").animate({height: "+=300px"}, 600);
+		$("#cuerpo").animate({marginTop:"20px"}, 400);
+		$("#encabezado").animate({marginTop:"-=20px"}, 600);
+
+	}, function() {
+
+		$("#hoverSlider").animate({height: "-=300px"}, 600);
+		$("#cuerpo").animate({marginTop:"-=20px"}, 400);
+		$("#encabezado").animate({marginTop:"+=20px"}, 600);
+	});
 }); 
 
 function methodToFixLayout(){
