@@ -53,7 +53,7 @@ div{
 
   background-color: rgba(0,0,0,0.45);
 
-  
+  z-index: 1;
 }
 
 #hoverSlider{
@@ -94,6 +94,8 @@ div{
 	float: left;
 
 	background-color: rgba(0,0,0,0.2);
+
+	z-index: 1;
 }
 
 #cuerpo{
@@ -114,7 +116,7 @@ div{
 
 	float: left;
 
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.25);
 }
 
 #myCarousel{

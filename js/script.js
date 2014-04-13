@@ -115,12 +115,12 @@ $(document).ready(function(){
 		$("#cuerpo").stop();
 		$("#encabezado").stop();
 
-
 		$("#hoverSlider").animate({height: "500px"}, 600);
 		$("#cuerpo").animate({marginTop:"5px"}, 400);
 		$("#encabezado").animate({marginTop:"-1em"}, 600, function(){
 
 			$("#sliderShow").css("z-index", "0");
+			$("#encabezado").css("z-index", "1");
 		});
 
 	}, function() {
@@ -143,6 +143,7 @@ $(document).ready(function(){
 		$("#encabezado").stop();
 
 		$("#sliderShow").css("z-index", "0");
+		$("#encabezado").css("z-index", "1");
 
 		$("#hoverSlider").animate({height: "500px"}, 600);
 		$("#cuerpo").animate({marginTop:"5px"}, 400);
