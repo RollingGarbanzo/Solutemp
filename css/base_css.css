@@ -70,6 +70,11 @@ div{
 
 #sliderShow{
 
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 	position: absolute;
 
 	width: 80%;
@@ -180,7 +185,18 @@ div{
 	float: left;
 }
 
-#contactos p{
+#cuerpoPestana p{
+
+	text-indent: 2em;
+
+	margin-top: 1%;
+	margin-left: 1%;
+	margin-top: 1.1%;
+	margin-bottom: 2%;
+
+}
+
+#infContactos{
 
 	margin-top: 1%;
 	margin-left: 1%;
