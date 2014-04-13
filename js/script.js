@@ -7,28 +7,11 @@ $(document).ready(function(){
 	$("#contactosB").removeClass("active");
 	$("#quienesB").removeClass("active");
 
-	$("#encabezado").hide();
-	$("#cuerpo").hide();
-	$("#pieDePagina").hide();
-
-	$("#inicio").hide();
 	$("#contactos").hide();
 	$("#quienes").hide();
 	$("#ofertas").hide();
 	$("#servicios").hide();
-	$("#sliderShow").hide();
 
-	$("#encabezado").fadeIn(200, function(){
-		
-		$("#sliderShow").fadeIn(350);
-		$("#cuerpo").fadeIn(350, function(){
-
-			$("#inicio").fadeIn("slow");
-			$("#pieDePagina").fadeIn(200);
-	
-		});
-
-	});
 
 	$(".inicioB").click(function(){
 
@@ -114,12 +97,13 @@ $(document).ready(function(){
 		$("#cuerpo").stop();
 		$("#encabezado").stop();
 
+		$("#encabezado").css("z-index", "1");
+
 		$("#hoverSlider").animate({height: "500px"}, 400);
 		$("#cuerpo").animate({marginTop:"5px"}, 400);
 		$("#encabezado").animate({marginTop:"-1em"}, 600, function(){
 
 			$("#sliderShow").css("z-index", "0");
-			$("#encabezado").css("z-index", "1");
 		});
 
 	}, function() {
@@ -144,6 +128,8 @@ $(document).ready(function(){
 		$("#sliderShow").css("z-index", "0");
 		$("#encabezado").css("z-index", "1");
 
+		$("#sliderShow").css("z-index", "0");
+
 		$("#hoverSlider").animate({height: "500px"}, 400);
 		$("#cuerpo").animate({marginTop:"5px"}, 400);
 		$("#encabezado").animate({marginTop:"-1em"}, 600);
@@ -160,6 +146,7 @@ $(document).ready(function(){
 		$("#cuerpo").animate({marginTop:"0px"}, 400);
 		$("#encabezado").animate({marginTop:"1em"}, 600);
 	});
+
 }); 
 
 function methodToFixLayout(){
