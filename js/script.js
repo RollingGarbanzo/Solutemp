@@ -12,29 +12,12 @@ $(document).ready(function(){
 		$(".inicioB").addClass("active");
 
 		$("#cuerpoPestana>div").hide();
-		$("#inicio").fadeIn("slow");
+		$("#inicio").fadeIn(100);
+
+		$("#menuServicios").slideDown();
 	
 	});
 
-	$("#contactosB").click(function(){
-
-		$(".nav li").removeClass("active");
-		$("#contactosB").addClass("active");
-
-		$("#cuerpoPestana>div").hide();
-		$("#contactos").fadeIn("slow");
-
-	});
-
-	$("#quienesB").click(function(){
-
-		$(".nav li").removeClass("active");
-		$("#quienesB").addClass("active");
-
-		$("#cuerpoPestana>div").hide();
-		$("#quienes").fadeIn("slow");
-
-	});
 
 	$("#ofertasB").click(function(){
 
@@ -42,7 +25,9 @@ $(document).ready(function(){
 		$("#ofertasB").addClass("active");
 
 		$("#cuerpoPestana>div").hide();
-		$("#ofertas").fadeIn("slow");
+		$("#ofertas").fadeIn();
+
+		$("#menuServicios").slideDown();
 	});
 
 	$("#serviciosB").click(function(){
@@ -51,7 +36,65 @@ $(document).ready(function(){
 		$("#serviciosB").addClass("active");
 
 		$("#cuerpoPestana>div").hide();
-		$("#servicios").fadeIn("slow");
+		$("#servicios").fadeIn();
+
+		$("#menuServicios").slideDown();
+	});
+
+	$("#contactosB").click(function(){
+
+		$(".nav li").removeClass("active");
+		$("#contactosB").addClass("active");
+
+		$("#cuerpoPestana>div").hide();
+		$("#contactos").fadeIn();
+		$("#menuServicios").slideUp();
+	});
+
+	$("#quienesB").click(function(){
+
+		$(".nav li").removeClass("active");
+		$("#quienesB").addClass("active");
+
+		$("#cuerpoPestana>div").hide();
+		$("#quienes").fadeIn();
+		$("#menuServicios").slideUp();
+	});
+
+	$(".inicioB").click(function(){
+
+		$(".nav li").removeClass("active");
+		$(".inicioB").addClass("active");
+
+		$("#cuerpoPestana>div").hide();
+		$("#inicio").fadeIn();
+
+		$("#menuServicios").slideDown();
+	
+	});
+
+	//MENU SECUNDARIO
+
+
+	$("#aireB").click(function(){
+
+		$("#menuServicios .nav li").removeClass("active");
+		$("#aireB").addClass("active");
+
+	});
+
+	$("#calefaccionB").click(function(){
+
+		$("#menuServicios .nav li").removeClass("active");
+		$("#calefaccionB").addClass("active");
+
+	});
+
+	$("#gasB").click(function(){
+
+		$("#menuServicios .nav li").removeClass("active");
+		$("#gasB").addClass("active");
+
 	});
 
 });
