@@ -18,7 +18,6 @@ $(document).ready(function(){
 
 	$("#contactosB").click(function(){
 
-
 		$(".nav li").removeClass("active");
 		$("#contactosB").addClass("active");
 
@@ -53,61 +52,6 @@ $(document).ready(function(){
 
 		$("#cuerpoPestana>div").hide();
 		$("#servicios").fadeIn("slow");
-	});
-
-	//--- SLIDESHOW ---
-
-	$("#hoverSlider").hover( function() {
-
-		$("#hoverSlider").stop();
-		$("#cuerpo").stop();
-		$("#encabezado").stop();
-
-		$("#encabezado").css("z-index", "1");
-
-		$("#hoverSlider").animate({height: "500px"}, 400);
-		$("#cuerpo").animate({marginTop:"5px"}, 400);
-		$("#encabezado").animate({marginTop:"-1em"}, 600, function(){
-
-			$("#sliderShow").css("z-index", "0");
-		});
-
-	}, function() {
-
-		$("#hoverSlider").stop();
-		$("#cuerpo").stop();
-		$("#encabezado").stop();
-
-		$("#sliderShow").css("z-index", "-1");
-
-		$("#hoverSlider").animate({height: "200px"}, 600);
-		$("#cuerpo").animate({marginTop:"0px"}, 400);
-		$("#encabezado").animate({marginTop:"1em"}, 600);
-	});
-
-	$("#sliderShow").hover( function() {
-
-		$("#hoverSlider").stop();
-		$("#cuerpo").stop();
-		$("#encabezado").stop();
-
-		$("#sliderShow").css("z-index", "0");
-
-		$("#hoverSlider").animate({height: "500px"}, 400);
-		$("#cuerpo").animate({marginTop:"5px"}, 400);
-		$("#encabezado").animate({marginTop:"-1em"}, 600);
-
-	}, function() {
-
-		$("#hoverSlider").stop();
-		$("#cuerpo").stop();
-		$("#encabezado").stop();
-
-		$("#sliderShow").css("z-index", "-1");
-
-		$("#hoverSlider").animate({height: "200px"}, 600);
-		$("#cuerpo").animate({marginTop:"0px"}, 400);
-		$("#encabezado").animate({marginTop:"1em"}, 600);
 	});
 
 });

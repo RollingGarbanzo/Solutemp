@@ -4,8 +4,9 @@
 	  <title>Solutemp</title>
 	  <link rel="stylesheet" type="text/css" href="./bootstrapDefault/css/bootstrap.css">
 	  <link rel="stylesheet" type="text/css" href="./bootstrapDefault/css/bootstrap-theme.css">
-	  <!--<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">-->
+	  <!--link rel="stylesheet" type="text/css" href="./css/bootstrap.css">-->
 	  <link rel="stylesheet" type="text/css" href="./css/base_css.css">
+	  <link rel="stylesheet" type="text/css" href="./css/slideshow.css">
 	  <meta charset='utf-8'/>
 	  
 
@@ -19,63 +20,6 @@
   	<script type="text/javascript" src="./js/jquery-1.11.0.js"></script>
   	<script type="text/javascript" src="./js/script.js"></script>
 
-    
-    <div id="sliderShow">
-		<div id="myCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
-    		<!-- numero de imagenes en el slider -->
-        	<ol class="carousel-indicators">
-            	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            	<li data-target="#myCarousel" data-slide-to="1"></li>
-            	<li data-target="#myCarousel" data-slide-to="2"></li>
-            	<li data-target="#myCarousel" data-slide-to="3"></li>
-            	<li data-target="#myCarousel" data-slide-to="4"></li>
-            	<li data-target="#myCarousel" data-slide-to="5"></li>
-        	</ol>   
-       		<!-- items del slider-->
-        	<div class="carousel-inner">
-            	<div class="active item">
-                	<div class="carousel-caption">
-                		<img src="img/slideShow/1.jpg">
-                	</div>
-            	</div>
-            <div class="item">
-                <div class="carousel-caption">
-                	<img src="img/slideShow/2.jpg">
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-caption">
-                	<img src="img/slideShow/3.jpg">
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-caption">
-                	<img src="img/slideShow/4.jpg">
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-caption">
-                	<img src="img/slideShow/5.jpg">
-                </div>
-            </div>
-            <div class="item">
-                <div class="carousel-caption">
-                	<img src="img/slideShow/6.jpg">
-                </div>
-            </div>
-        </div>
-        <!-- navegador del slider -->
-        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-        </a>
-        <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-        </a>
-    </div>
-		
-		
-	</div>
-
 
   	<div id = "heading">
 	    <!--<div id="icono"><a class = "inicioB"><img src="./img/solutemp_icono.jpg"></a></div>-->
@@ -86,15 +30,19 @@
 	    	</div>
 
 	    </div>
-	</div>
 
-	<div id="hoverSlider"><!-- Este DIV tansolo existe apra detectar cuando se hace hover sobre el slider--></div>
+	    <div id="icono">
+
+	    	<img src="./img/solutemp_icono.jpg">
+
+	    </div>
+	</div>
 
     <div id="cuerpo">
 
 	   	<div id="tabla">
 	   		<div id="pestanas">
-				<ul class="nav nav-tabs">
+				<ul class="nav nav-pills">
 				  <li class="inicioB"><a>Inicio</a></li>
 				  <li id="ofertasB"><a>Ofertas</a></li>
 				  <li id="serviciosB"><a>Servicios</a></li>
@@ -109,9 +57,30 @@
 
 					<div id="inicio">
 
-						<h2><i>¡CONOCENOS!</i></h2>
+						<div id="slideShow">
+						    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+							  <!-- Indicators -->
+							  <ol class="carousel-indicators">
+							    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+							    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+							  </ol>
 
-						<iframe width="500" height="400" src="http://www.youtube.com/embed/3BAgPYzoXKo" frameborder="0" allowfullscreen></iframe>
+							  <!-- Wrapper for slides -->
+							  <div class="carousel-inner">
+							    <div class="item active">
+							      <img src="./img/slideShow/1.jpg">
+							    </div>
+							    <div class="item">
+							    	<img src="./img/slideShow/2.jpg">
+							    </div>
+							    <div class="item">
+							    	<img src="./img/slideShow/3.jpg">
+							    </div>
+							  </div>
+							</div>
+						</div>	
+							
 
 						<p>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
