@@ -1,124 +1,57 @@
 	
 $(document).ready(function(){
 
-	$(window).on("resize", methodToFixLayout);
-
+	$("#cuerpoPestana>div").hide();
 	$(".inicioB").addClass("active");
-	$("#contactosB").removeClass("active");
-	$("#quienesB").removeClass("active");
 
-	$("#encabezado").hide();
-	$("#cuerpo").hide();
-	$("#pieDePagina").hide();
-
-	$("#inicio").hide();
-	$("#contactos").hide();
-	$("#quienes").hide();
-	$("#ofertas").hide();
-	$("#servicios").hide();
-
-	$("#encabezado").fadeIn(200, function(){
-		
-		$("#cuerpo").fadeIn(300, function(){
-
-			$("#inicio").fadeIn(150, function(){
-
-				$("#pieDePagina").fadeIn("slow");
-	
-			});
-	
-		});
-
-	});
+	$("#inicio").show();
 
 	$(".inicioB").click(function(){
 
+		$(".nav li").removeClass("active");
 		$(".inicioB").addClass("active");
-		$("#contactosB").removeClass("active");
-		$("#quienesB").removeClass("active");
-		$("#ofertasB").removeClass("active");
-		$("#serviciosB").removeClass("active");
 
-		//$("#dentroTabla").css("border-top-left-radius" , "0px");
-
+		$("#cuerpoPestana>div").hide();
 		$("#inicio").fadeIn("slow");
-		$("#contactos").hide();
-		$("#quienes").hide();
-		$("#ofertas").hide();
-		$("#servicios").hide();		
+	
 	});
 
 	$("#contactosB").click(function(){
 
-
-		$(".inicioB").removeClass("active");
+		$(".nav li").removeClass("active");
 		$("#contactosB").addClass("active");
-		$("#quienesB").removeClass("active");
-		$("#ofertasB").removeClass("active");
-		$("#serviciosB").removeClass("active");
 
-		$("#inicio").hide();
+		$("#cuerpoPestana>div").hide();
 		$("#contactos").fadeIn("slow");
-		$("#quienes").hide();
-		$("#ofertas").hide();
-		$("#servicios").hide();
+
 	});
 
 	$("#quienesB").click(function(){
 
-		$(".inicioB").removeClass("active");
-		$("#contactosB").removeClass("active");
+		$(".nav li").removeClass("active");
 		$("#quienesB").addClass("active");
-		$("#ofertasB").removeClass("active");
-		$("#serviciosB").removeClass("active");
 
-		$("#inicio").hide();
-		$("#contactos").hide();
+		$("#cuerpoPestana>div").hide();
 		$("#quienes").fadeIn("slow");
-		$("#ofertas").hide();
-		$("#servicios").hide();
+
 	});
 
 	$("#ofertasB").click(function(){
 
-		$(".inicioB").removeClass("active");
-		$("#contactosB").removeClass("active");
-		$("#quienesB").removeClass("active");
+		$(".nav li").removeClass("active");
 		$("#ofertasB").addClass("active");
-		$("#serviciosB").removeClass("active");
 
-		$("#inicio").hide();
-		$("#contactos").hide();
-		$("#quienes").hide();
+		$("#cuerpoPestana>div").hide();
 		$("#ofertas").fadeIn("slow");
-		$("#servicios").hide();
 	});
 
 	$("#serviciosB").click(function(){
 
-		$(".inicioB").removeClass("active");
-		$("#contactosB").removeClass("active");
-		$("#quienesB").removeClass("active");
-		$("#ofertasB").removeClass("active");
+		$(".nav li").removeClass("active");
 		$("#serviciosB").addClass("active");
 
-		$("#inicio").hide();
-		$("#contactos").hide();
-		$("#quienes").hide();
-		$("#ofertas").hide();
+		$("#cuerpoPestana>div").hide();
 		$("#servicios").fadeIn("slow");
 	});
 
-
-}); 
-
-function methodToFixLayout(){
-
-	var winHeight = $(window).height();
-    var winWidth = $(window).width();
-
-    if(winWidth < 640){
-
-    	
-    }
-}
+});
