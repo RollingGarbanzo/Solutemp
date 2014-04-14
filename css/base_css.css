@@ -26,7 +26,7 @@ div{
 
   width: 50%;
   height: 12%;
-  margin-left: 11%;
+  margin-left: 12%;
   /*background-color: green;*/
   float: left;
 
@@ -72,9 +72,8 @@ div{
 
 #cuerpo{
 
-	width: 70%;
-	margin-left: 14%;
-	margin-right: 14%;
+	width: 65%;
+	margin-left: 17.5%;
 
 	padding-left: 1%;
 	padding-right: 1%;
@@ -166,6 +165,10 @@ div{
 	float: left;
 
 	border-radius: 2px;
+
+	padding: 2px;
+
+	border: 1px solid;
 
 }
 
@@ -260,14 +263,25 @@ ul.nav a {
 	background-color: #AAAAAA;
 }
 
+ul.nav li.active a{
+
+	background-color: #A36BF2;
+	border: 1px solid;
+}
+
+ul.nav li.active a:hover{
+
+	background-color: #A36BF2;
+}
+
 ul.nav a:hover {
 
 	/*margin-right: 0.5em;
 
 	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
+	border-top-left-radius: 5px;*/
 
-	background-color: #CCCCCC;*/
+	background-color: #CCCCCC;
 
 }
 
