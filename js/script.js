@@ -193,7 +193,7 @@ $(document).ready(function(){
 	$("#ofertasAireC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#ofertasAire").addClass("active");
+		$("#ofertasAire, #ofertasAireC").addClass("active");
 
 		$("#cuerpoPestana>.partePestana:not(#ofertasAire)").hide();
 		$("#ofertasAire").fadeIn();
@@ -203,60 +203,98 @@ $(document).ready(function(){
 	$("#montajeAireC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#montajeC").addClass("active");
+		$("#montajeAire, #montajeAireC").addClass("active");
+
+		$("#cuerpoPestana>.partePestana:not(#montajeAire)").hide();
+		$("#montajeAire").fadeIn();
+
 
 	});
 
-	$("#ofertasConductosC").click(function(){
+	$("#conductosAireC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#ofertasConductosC").addClass("active");
+		$("#conductosAire, #conductosAireC").addClass("active");
+
+		$("#cuerpoPestana>.partePestana:not(#conductosAire)").hide();
+		$("#conductosAire").fadeIn();
 
 	});
 
-	$("#InstalacionAireC").click(function(){
+	$("#instalacionAireC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#solInstalacionC").addClass("active");
+		$("#instalacionAire, #instalacionAireC").addClass("active");
+
+		$("#cuerpoPestana>.partePestana:not(#instalacionAire)").hide();
+		$("#instalacionAire").fadeIn();
 
 	});
 
 	$("#mantenimientoAireC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#mantenimientoC").addClass("active");
+		$("#mantenimientoAire, #mantenimientoAireC").addClass("active");
+
+		$("#cuerpoPestana>.partePestana:not(#mantenimientoAire)").hide();
+		$("#mantenimientoAire").fadeIn();
 
 	});
 
-		$("#ofertasCalefaccionC").click(function(){
+
+	$("#ofertasCalefaccionC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#ofertasCalefaccion").addClass("active");
+		$("#ofertasCalefaccion, #ofertasCalefaccionC").addClass("active");
 
-		$("#cuerpoPestana>.partePestana").hide();
+		$("#cuerpoPestana>.partePestana:not(#ofertasCalefaccion)").hide();
 		$("#ofertasCalefaccion").fadeIn();
 
 	});
 
-		$("#ofertasGasC").click(function(){
+
+	$("#mantenimientoCalefaccionC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#ofertasGas").addClass("active");
+		$("#mantenimientoCalefaccion, #mantenimientoCalefaccionC").addClass("active");
 
-		$("#cuerpoPestana>.partePestana").hide();
+		$("#cuerpoPestana>.partePestana:not(#mantenimientoCalefaccion)").hide();
+		$("#mantenimientoCalefaccion").fadeIn();
+
+	});
+
+
+	$("#ofertasGasC").click(function(){
+
+		$(".navPart").removeClass("active");
+		$("#ofertasGas, #ofertasGasC").addClass("active");
+
+		$("#cuerpoPestana>.partePestana:not(#ofertasGas)").hide();
 		$("#ofertasGas").fadeIn();
 
 	});
 
-	/*	$("#ofertasGasC").click(function(){
+	$("#montajeGasC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#ofertasGas").addClass("active");
+		$("#montajeGas, #montajeGasC").addClass("active");
 
-		$("#cuerpoPestana>.partePestana:not(#ofertasAire)").hide();
-		$("#ofertasAire").fadeIn();
+		$("#cuerpoPestana>.partePestana:not(#montajeGas)").hide();
+		$("#montajeGas").fadeIn();
 
-	});*/
+	});
+
+	$("#mantenimientoGasC").click(function(){
+
+		$(".navPart").removeClass("active");
+		$("#mantenimientoGas, #mantenimientoGasC").addClass("active");
+
+		$("#cuerpoPestana>.partePestana:not(#mantenimientoGas)").hide();
+		$("#mantenimientoGas").fadeIn();
+
+	});
+
+
 });
 
 function reiniciarNavParts(){
@@ -266,7 +304,6 @@ function reiniciarNavParts(){
 	$(".menuTerciario").slideUp();
 	$(".navPart").removeClass("active");
 }
-
 
 
 
