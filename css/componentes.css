@@ -1,0 +1,101 @@
+/*----------*/
+/*- OFERTA -*/
+/*----------*/
+
+.oferta{
+
+	width: 12em;
+	height: 20em;
+
+	background-color: #BBBBBB;
+	border: 1px solid;
+	border-color: grey;
+
+}
+
+.oferta>div:first-child{
+
+	height: 20%;
+	width: 100%;
+
+	padding: 2%;
+
+	border-bottom: 1px solid;
+	border-color: grey;
+
+	background-color:  #5C2ADA;
+
+	text-align: center;
+
+	overflow: hidden;
+
+	color: white;
+}
+
+.oferta img{
+
+	height: 8em;
+	width: 11.4em;
+
+	margin-top: 1%;
+
+	margin-left: 0.3em;
+	margin-right: 0.3em;
+
+	border: 1px solid;
+	border-color: grey;
+
+	background-color: red;
+
+}
+
+.oferta>div:nth-child(3){
+
+	text-align: left;
+
+	margin-top: 0.1em;
+	margin-left: 1em;
+	margin-right: 1em;
+
+	font-size: 20;
+
+	font-weight: bold;
+	color: darkred;
+
+}
+
+.oferta>ul{
+
+	text-align: left;
+
+	overflow: hidden;
+
+	width: 14.2em;
+	height: 4.4em;
+
+	margin-top: 0.1em;
+	margin-left: -1.8em;
+
+	font-size: 12;
+
+	float: left;
+}
+
+.oferta>a{
+
+	background-color: #CCCCCC;
+
+	text-align: left;
+
+	width: 100%;
+	height: 1.2em;
+
+	font-size: 12;
+
+	float: left;
+
+}
+
+/*----------*/
+/*- OFERTA -*/
+/*----------*/

@@ -21,7 +21,7 @@ body{
 
 #encabezado{
 
-  margin-top: 1em;
+  margin-top: 0.5em;
 
   width: 62%;
   height: 8em;
@@ -32,7 +32,7 @@ body{
 
 #icono{
 
-  margin-top: 1em;
+  margin-top: 0.5em;
 
   width: 38%;
   height: 8em;
@@ -106,10 +106,6 @@ body{
 }
 
 #dentroTabla{
-
-	/*margin-top: 0.5%;*/
-
-	/*border: 1px solid;*/
 
 	min-height: 600px;
 
@@ -329,64 +325,6 @@ body{
 	background-color: #5C2ADA;
 }
 
-/*ul.nav a {
-
-	color: black !important;
-	font-weight: bold;
-
-	margin: 5px;
-	border: 1px solid;
-	box-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-ul.nav li.active a{
-
-	color: white !important;
-
-	border: 1px solid;
-	border-color: black;
-	background-color: #5C2ADA;
-	box-shadow: 0 0 15px rgba(0,0,0,1);
-}
-
-ul.nav li.active a:hover{
-
-	background-color: #5C2ADA;
-}
-
-ul.nav a:hover {
-
-	background-color: #CCCCCC;
-
-}
-
-li.active a {
-
-	color: black !important;
-}
-
-ul.nav li a{
-
-	border-left: 1px solid;
-}
-
-li a:hover {
-
-	color: #1B0A2A !important;
-
-	cursor: pointer;
-
-	-webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-li.active a:hover {
-
-	color: black  !important;
-}*/
-
 /*BOTONES*/
 
 #pestanas .btn-group, #menuServicios .btn-group{
@@ -395,39 +333,32 @@ li.active a:hover {
 	margin-bottom: 2px;
 }
 
-/*CONTENIDO*/
+/*--OFERTAS CUERPO INICIO--*/
 
-.oferta{
+#ofertasCuerpoInicio{
 
-	width: 12em;
-	height: 20em;
-
-	background-color: #BBBBBB;
-	border: 1px solid;
-	border-color: grey;
-
-}
-
-.oferta>div:first-child{
-
-	height: 20%;
 	width: 100%;
 
-	padding: 2%;
+	margin-bottom: 3em;
 
-	border-bottom: 1px solid;
-	border-color: grey;
-
-	background-color:  #5C2ADA;
-
-	text-align: center;
-
-	color: white;
+	float: left;
 }
 
-.oferta ul{
+#ofertasCuerpoInicio .oferta{
 
-	width: 10em;
-	height: 20em;
+	float: left;
+
+	margin-left: 1.5em;
+
+	margin-top: 1em;
+}
+
+#ofertasCuerpoInicio #bolsaOfertasInicio{
+
+	border-top: 1px dashed;
+
+	width: 100%;
+
+	float: left;
 
 }
