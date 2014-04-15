@@ -111,7 +111,7 @@ $(document).ready(function(){
 
 			$(".menuTerciario").hide(200);
 			$("#aireC").slideDown(200);
-			$("#pestanasTercero").slideDown();
+			$("#pestanasTercero").slideDown(200);
 		}
 	});
 
@@ -137,7 +137,7 @@ $(document).ready(function(){
 
 			$(".menuTerciario").hide(200);
 			$("#calefaccionC").slideDown(200);
-			$("#pestanasTercero").slideDown();
+			$("#pestanasTercero").slideDown(200);
 		}
 
 	});
@@ -164,7 +164,7 @@ $(document).ready(function(){
 
 			$(".menuTerciario").hide(200);
 			$("#gasC").slideDown(200);
-			$("#pestanasTercero").slideDown();
+			$("#pestanasTercero").slideDown(200);
 		}
 
 	});
@@ -215,7 +215,7 @@ $(document).ready(function(){
 
 function reiniciarNavParts(){
 
-	$("#pestanasTercero").slideUp();
+	$("#pestanasTercero").slideUp(200);
 
 	$(".menuTerciario").slideUp();
 	$(".navPart").removeClass("active");
