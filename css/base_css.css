@@ -47,8 +47,6 @@ body{
 	padding-right: 1%;
 	padding-bottom: 1%;
 
-	margin-bottom: 3em;
-
 	border-radius: 10px;
 
 	border-left: 1px solid;
@@ -167,14 +165,40 @@ body{
 	height: 50%;
 }
 
+#prePie{
+
+	float:left;
+
+	width: 65%;
+
+	margin-top: 1em;
+
+	margin-left: 17.5%;
+}
+
+#prePie #marcas{
+
+	width: 75%;
+
+	margin-left: 1em;
+}
+
 #pieDePagina{
 
-	margin-left: 15%;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: rgba(0,0,0,0.2);
+	border-radius: 5px;
+
+	padding-top: 1em;
+
+	margin-top: 2em;
+	margin-left: 17.5%;
 	margin-bottom: 0.5em;
 
 	min-height: 150px;
 
-	width: 80%;
+	width: 65%;
 
 	font-size: 11;
 
@@ -246,6 +270,10 @@ body{
 
 #pestanasTercero{
 
+	border-top: 1px dashed;
+
+	width: 80%;
+
 	height: 3.3em;
 
 }
@@ -254,13 +282,10 @@ body{
 
 	padding-top: 0.1em;
 
-	width: 80%;
-
 	height: 3.3em;
 
 	margin-bottom: 2px;
 
-	border-top: 1px dashed;
 }
 
 .navPart{
