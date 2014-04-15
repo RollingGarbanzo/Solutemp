@@ -238,7 +238,15 @@ $(document).ready(function(){
 
 	});
 
-	
+		$("#ofertasGasC").click(function(){
+
+		$(".navPart").removeClass("active");
+		$("#ofertasGas").addClass("active");
+
+		$("#cuerpoPestana>.partePestana").hide();
+		$("#ofertasGas").fadeIn();
+
+	});
 
 	/*	$("#ofertasGasC").click(function(){
 
@@ -258,3 +266,10 @@ function reiniciarNavParts(){
 	$(".menuTerciario").slideUp();
 	$(".navPart").removeClass("active");
 }
+
+
+
+
+
+
+dsjkfhkas.fhsañdlfkhsldk.fhñasdlf
