@@ -92,7 +92,6 @@ $(document).ready(function(){
 	$("#aireB").click(function(){
 
 		//$("#menuServicios .nav li").removeClass("active");
-		$(".navPart").removeClass("active");
 		$(".menuTerciario").finish();
 
 		if($("#ofertasB").hasClass("active")){
@@ -112,13 +111,13 @@ $(document).ready(function(){
 
 			$(".menuTerciario").hide(200);
 			$("#aireC").slideDown(200);
+			$("#pestanasTercero").slideDown();
 		}
 	});
 
 	$("#calefaccionB").click(function(){
 
 		//$("#menuServicios .nav li").removeClass("active");
-		$(".navPart").removeClass("active");
 		$(".menuTerciario").finish();
 
 		if($("#ofertasB").hasClass("active")){
@@ -138,6 +137,7 @@ $(document).ready(function(){
 
 			$(".menuTerciario").hide(200);
 			$("#calefaccionC").slideDown(200);
+			$("#pestanasTercero").slideDown();
 		}
 
 	});
@@ -145,7 +145,6 @@ $(document).ready(function(){
 	$("#gasB").click(function(){
 
 		//$("#menuServicios .nav li").removeClass("active");
-		$(".navPart").removeClass("active");
 		$(".menuTerciario").finish();
 
 		if($("#ofertasB").hasClass("active")){
@@ -165,6 +164,7 @@ $(document).ready(function(){
 
 			$(".menuTerciario").hide(200);
 			$("#gasC").slideDown(200);
+			$("#pestanasTercero").slideDown();
 		}
 
 	});
@@ -214,6 +214,8 @@ $(document).ready(function(){
 });
 
 function reiniciarNavParts(){
+
+	$("#pestanasTercero").slideUp();
 
 	$(".menuTerciario").slideUp();
 	$(".navPart").removeClass("active");
