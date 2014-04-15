@@ -2,13 +2,14 @@ body{
 
 	background-attachment: fixed;
 
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 div{
 
 	overflow:hidden;
 }
+
 
 #encabezado{
 
@@ -28,7 +29,7 @@ div{
 
   width: 25.5%;
   height: 12%;
-  background-color: red;
+
   float: left;
 
 }
@@ -223,16 +224,83 @@ div{
 	margin-left: 1em;
 }
 
-ul.nav a {
+/*MENU SECUNDARIO*/
+
+
+#menuServicios{
+
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+
+	border-top: 1px dashed;
+
+	width: 70%;
+}
+
+#menuServicios img{
+
+	margin-right: 1em;
+	height: 3em;
+
+	border-radius: 3px;
+}
+
+/*MENU TERCIARIO*/
+
+.menuTerciario{
+
+	padding-top: 0.1em;
+
+	width: 80%;
+
+	height: 3.3em;
+
+	margin-bottom: 2px;
+
+	border-top: 1px dashed;
+}
+
+.navPart{
+
+	float: left;
+
+	text-align: center;
+
+	border-left: 1px solid;
+	border-right: 1px solid;
+
+	border-collapse: collapse;
+	border-color: #999999;
+
+	background-color: #DDDDDD;
+
+	margin-top: 1px;
+
+	width: 20%;
+	height: 1.5em;
+
+	padding-left: 1em;
+	padding-right: 1em;
+}
+
+.navPart:hover{
+
+	cursor: pointer;
+
+	background-color: #AAAAAA;
+}
+
+.navPart.active{
+
+	color: white !important;
+
+	background-color: #5C2ADA;
+}
+
+/*ul.nav a {
 
 	color: black !important;
 	font-weight: bold;
-
-	/*margin-right: 0.5em;
-
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	background-color: #AAAAAA;*/
 
 	margin: 5px;
 	border: 1px solid;
@@ -247,8 +315,6 @@ ul.nav li.active a{
 	border-color: black;
 	background-color: #5C2ADA;
 	box-shadow: 0 0 15px rgba(0,0,0,1);
-	/*border: 1px solid;
-	font-weight: bolder;*/
 }
 
 ul.nav li.active a:hover{
@@ -258,11 +324,6 @@ ul.nav li.active a:hover{
 
 ul.nav a:hover {
 
-	/*margin-right: 0.5em;
-
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;*/
-
 	background-color: #CCCCCC;
 
 }
@@ -270,6 +331,11 @@ ul.nav a:hover {
 li.active a {
 
 	color: black !important;
+}
+
+ul.nav li a{
+
+	border-left: 1px solid;
 }
 
 li a:hover {
@@ -287,24 +353,14 @@ li a:hover {
 li.active a:hover {
 
 	color: black  !important;
-}
+}*/
 
-/*MENU SECUNDARIO*/
+/*BOTONES*/
 
+#pestanas .btn-group, #menuServicios .btn-group{
 
-#menuServicios{
-
-	border-top: 1px dashed;
-
-	width: 70%;
-}
-
-#menuServicios img{
-
-	margin-right: 1em;
-	height: 3em;
-
-	border-radius: 3px;
+	margin-top: 2px;
+	margin-bottom: 2px;
 }
 
 /*ICONOS*/
