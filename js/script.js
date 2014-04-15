@@ -1,4 +1,4 @@
-	
+
 $(document).ready(function(){
 
 	$("#cuerpoPestana>div").hide();
@@ -272,4 +272,3 @@ function reiniciarNavParts(){
 
 
 
-dsjkfhkas.fhsañdlfkhsldk.fhñasdlf
