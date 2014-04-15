@@ -1,0 +1,60 @@
+/*ESPECIFICOS*/
+
+#sShow1{
+
+	height: 300px;
+	width: 100%;
+
+	float: right;
+}
+
+/*STANDRADS*/
+
+.slideShow{
+
+	box-shadow: 0 0 10px rgba(0,0,0,0.6);
+
+	padding: 5px;
+	margin: 10px;
+}
+
+.slideShow .carousel-inner{
+
+	width: 100%;
+	max-height: 100%;
+
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+.slideShow .carousel-inner .item{
+
+	width: 100%;
+	max-height: 100%;
+
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+.slideShow .carousel-inner img{
+
+	height: 100%;
+
+	margin: auto;
+}
+
+
+.carousel-indicators{
+
+	position: absolute;
+
+	left: 30%;
+	bottom: 0px;
+
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+
+	border-radius: 5px;
+}
