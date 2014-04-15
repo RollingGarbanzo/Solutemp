@@ -4,16 +4,16 @@ $(document).ready(function(){
 	$("#cuerpoPestana>div").hide();
 	reiniciarNavParts();
 
-	$(".inicioB").addClass("active");
+	$(".inicioA").addClass("active");
 
 	$("#inicio").show();
 
-	$(".inicioB").click(function(){
+	$(".inicioA").click(function(){
 
 		reiniciarNavParts();
 
 		$("#pestanas button").removeClass("active");
-		$(".inicioB").addClass("active");
+		$(".inicioA").addClass("active");
 
 		$("#cuerpoPestana>.partePestana:not(#inicio)").hide();
 		$("#inicio").fadeIn();
@@ -26,13 +26,13 @@ $(document).ready(function(){
 	});
 
 
-	$("#ofertasB").click(function(){
+	$("#ofertasA").click(function(){
 
 		//$(".nav li").removeClass("active");
 		reiniciarNavParts();
 
 		$("#pestanas button").removeClass("active");
-		$("#ofertasB").addClass("active");
+		$("#ofertasA").addClass("active");
 
 		$("#cuerpoPestana>.partePestana:not(#ofertas)").hide();
 		$("#ofertas").fadeIn();
@@ -43,13 +43,13 @@ $(document).ready(function(){
 		$("#menuServicios").slideDown();
 	});
 
-	$("#serviciosB").click(function(){
+	$("#serviciosA").click(function(){
 
 		//$(".nav li").removeClass("active");
 		reiniciarNavParts();
 
 		$("#pestanas button").removeClass("active");
-		$("#serviciosB").addClass("active");
+		$("#serviciosA").addClass("active");
 
 		$("#cuerpoPestana>.partePestana:not(#servicios)").hide();
 		$("#servicios").fadeIn();
@@ -60,13 +60,13 @@ $(document).ready(function(){
 		$("#menuServicios").slideDown();
 	});
 
-	$("#contactosB").click(function(){
+	$("#contactosA").click(function(){
 
 		//$(".nav li").removeClass("active");
 		reiniciarNavParts();
 
 		$("#pestanas button").removeClass("active");
-		$("#contactosB").addClass("active");
+		$("#contactosA").addClass("active");
 
 		$("#cuerpoPestana>.partePestana:not(#contactos)").hide();
 		$("#contactos").fadeIn();
@@ -75,13 +75,13 @@ $(document).ready(function(){
 		$("#menuServicios").slideUp();
 	});
 
-	$("#quienesB").click(function(){
+	$("#quienesA").click(function(){
 
 		//$(".nav li").removeClass("active");
 		reiniciarNavParts();
 
 		$("#pestanas button").removeClass("active");
-		$("#quienesB").addClass("active");
+		$("#quienesA").addClass("active");
 
 		$("#cuerpoPestana>.partePestana:not(#quienes)").hide();
 		$("#quienes").fadeIn();
@@ -100,7 +100,7 @@ $(document).ready(function(){
 		//$("#menuServicios .nav li").removeClass("active");
 		$("#pestanasTercero").finish();
 
-		if($("#ofertasB").hasClass("active")){
+		if($("#ofertasA").hasClass("active")){
 
 			$(".menuTerciario").slideUp();
 
@@ -131,7 +131,7 @@ $(document).ready(function(){
 		//$("#menuServicios .nav li").removeClass("active");
 		$("#pestanasTercero").finish();
 
-		if($("#ofertasB").hasClass("active")){
+		if($("#ofertasA").hasClass("active")){
 
 			$(".menuTerciario").slideUp();
 
@@ -161,7 +161,7 @@ $(document).ready(function(){
 		//$("#menuServicios .nav li").removeClass("active");
 		$("#pestanasTercero").finish();
 
-		if($("#ofertasB").hasClass("active")){
+		if($("#ofertasA").hasClass("active")){
 
 			$(".menuTerciario").slideUp();
 
