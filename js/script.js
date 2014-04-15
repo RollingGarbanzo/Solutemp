@@ -190,17 +190,17 @@ $(document).ready(function(){
 	//- MENUS TERCIARIOS -
 	//--------------------
 
-	$("#ofertasC").click(function(){
+	$("#ofertasAireC").click(function(){
 
 		$(".navPart").removeClass("active");
-		$("#ofertasC").addClass("active");
+		$("#ofertasAire").addClass("active");
 
 		$("#cuerpoPestana>.partePestana:not(#ofertasAire)").hide();
 		$("#ofertasAire").fadeIn();
 
 	});
 
-	$("#montajeC").click(function(){
+	$("#montajeAireC").click(function(){
 
 		$(".navPart").removeClass("active");
 		$("#montajeC").addClass("active");
@@ -214,20 +214,41 @@ $(document).ready(function(){
 
 	});
 
-	$("#solInstalacionC").click(function(){
+	$("#InstalacionAireC").click(function(){
 
 		$(".navPart").removeClass("active");
 		$("#solInstalacionC").addClass("active");
 
 	});
 
-	$("#mantenimientoC").click(function(){
+	$("#mantenimientoAireC").click(function(){
 
 		$(".navPart").removeClass("active");
 		$("#mantenimientoC").addClass("active");
 
 	});
 
+		$("#ofertasCalefaccionC").click(function(){
+
+		$(".navPart").removeClass("active");
+		$("#ofertasCalefaccion").addClass("active");
+
+		$("#cuerpoPestana>.partePestana").hide();
+		$("#ofertasCalefaccion").fadeIn();
+
+	});
+
+	
+
+	/*	$("#ofertasGasC").click(function(){
+
+		$(".navPart").removeClass("active");
+		$("#ofertasGas").addClass("active");
+
+		$("#cuerpoPestana>.partePestana:not(#ofertasAire)").hide();
+		$("#ofertasAire").fadeIn();
+
+	});*/
 });
 
 function reiniciarNavParts(){
