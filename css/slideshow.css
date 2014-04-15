@@ -3,15 +3,7 @@
 #sShow1{
 
 	height: 250px;
-	width: 30%;
-
-	float: left;
-}
-
-#sShow2{
-
-	height: 350px;
-	width: 40%;
+	width: 50%;
 
 	float: right;
 }
@@ -50,8 +42,7 @@
 
 	height: 100%;
 
-	margin-top: auto;
-	margin-bottom: auto;
+	margin: auto;
 }
 
 
