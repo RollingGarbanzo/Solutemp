@@ -15,6 +15,7 @@
 	  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
 	  <script src="./js/bootstrap.js"></script>
   	  <script type="text/javascript" src="./js/script.js"></script>
+  	  <script type="text/javascript" src="./js/bibliotecaOfertas.js"></script>
 	  
   </head>
   <body>
@@ -44,7 +45,7 @@
 	   		<div id="pestanas">
 
 	   			<div class="btn-group">
-				  <button type="button" class="btn btn-default inicioA">Inicio</button>
+				  <button type="button" class="btn btn-default inicioA" onClick="window.open('index.html')"  method="POST">Inicio</button>
 				  <button type="button" class="btn btn-default" id="ofertasA">Ofertas</button>
 				  <button type="button" class="btn btn-default" id="serviciosA">Servicios</button>
 				  <button type="button" class="btn btn-default" id="contactosA">Contacto</button>
@@ -136,22 +137,24 @@
 
 							<h3>OFERTAS DESTACADAS</h3>
 
-							<div id="bolsaOfertasInicio">
+							<div id="bolsaOfertasInicio" class="bolsaOfertas">
 								<div class="oferta">
 									<div>
-										Nueva oferta 2x1 en Aires acondicionados
+										Vieja oferta 1x3
 									</div>
 
-									<img src="./img/iconos/aire.png">
+									<img src="./img/iconos/gas.png">
 
-									<div>255 €</div>
+									<div>1550.54 Y</div>
 
 									<ul>
-										<li>Limpieza de tuberias</li>
+										<li>Limpieza de Coche</li>
+										<li>Revisiones de niveles de aire</li>
+										<li>Revisiones de niveles de aire</li>
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="1">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -168,7 +171,7 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="2">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -185,7 +188,7 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="3">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -202,7 +205,7 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="4">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -219,7 +222,7 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="5">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -236,7 +239,7 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="6">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -253,7 +256,7 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="7">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -270,7 +273,7 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="8">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -287,7 +290,7 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="9">Ver mas...</a>				
 								</div>
 
 								<div class="oferta">
@@ -304,8 +307,9 @@
 										<li>Revisiones de niveles de aire</li>
 									</ul>		
 
-									<a href="">Ver mas...</a>				
+									<a of="10">Ver mas...</a>	
 								</div>
+
 							</div>
 
 						</div>
@@ -462,6 +466,11 @@
 
 						NADA
 					</div>
+
+					<div class="partePestana" id="contenidoOferta">
+						<!-- SE COLOCA EL CONTENIDO DE LAS OFERTAS-->
+					</div>
+
 				</div>
 			</div>
 		</div>

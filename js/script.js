@@ -294,7 +294,6 @@ $(document).ready(function(){
 
 	});
 
-
 });
 
 function reiniciarNavParts(){
