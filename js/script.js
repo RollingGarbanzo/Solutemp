@@ -167,6 +167,8 @@ function clickElementoPrimarioSinSecund(element){
 
 	var href = $(element).attr("href");
 
+	$("#menuServicios button").removeClass("active");
+
 	if(!tieneClaseI){
 		$(".menuTerciario .navPart").removeClass("active");
 		$(element).addClass("active");
@@ -194,12 +196,16 @@ function clickElementoPrimarioConSecund(element){
 
 	var href = $(element).attr("href");
 
+	$("#menuServicios button").removeClass("active");
+
 	if(!tieneClaseI){
 		$("#pestanasTercero .navPart").removeClass("active");
 		$(element).addClass("active");
 	}
 
 	$("#pestanasTercero").slideUp(100, function(){
+
+		$(".menuTerciario .navPart").removeClass("active");
 
 		$("#menuServicios").slideDown(100, function(){
 
