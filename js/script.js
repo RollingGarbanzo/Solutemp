@@ -217,10 +217,6 @@ function clickElementoPrimarioConSecund(element){
 
 function inicializaPagina(){
 
-
-	/*$("#pestanasTercero").hide();*/
-
-
 	$(".partePestana").hide();
 	$(".partePestana").fadeIn("slow");
 }
