@@ -1,124 +1,38 @@
 
 $(document).ready(function(){
 
-	$("#pestanasTercero").hide();
 
-	$(".partePestana").hide();
-	$(".partePestana").fadeIn("slow");
+	inicializaPagina();
+
+	//-----------------
+	//- MENU PRIMARIO -
+	//-----------------
+
 
 	$(".inicioA").click(function(){
 
-		var tieneClaseI = $(this).hasClass("active");
-
-		var href = $(this).attr("href");
-
-		if(!tieneClaseI){
-			$(".inicioA").addClass("active");
-		}
-
-		$("#pestanasTercero").slideUp(100, function(){
-
-			$("#menuServicios").slideDown(100, function(){
-
-				if(!tieneClaseI){
-					window.location.href = href;
-				}
-
-				$(".menuTerciario").hide();
-			});
-
-		});
+		clickElementoPrimarioConSecund(this);
 		
 	});
 
 	$("#ofertasA").click(function(){
 
-		var tieneClaseI = $(this).hasClass("active");
-
-		var href = $(this).attr("href");
-
-		if(!tieneClaseI){
-			$("#ofertasA").addClass("active");
-		}
-
-		$("#pestanasTercero").slideUp(100, function(){
-
-			$("#menuServicios").slideDown(100, function(){
-
-				if(!tieneClaseI){
-					window.location.href = href;
-				}
-
-				$(".menuTerciario").hide();
-			});
-
-		});
+		clickElementoPrimarioConSecund(this);
 	});
 
 	$("#serviciosA").click(function(){
 
-		var tieneClaseI = $(this).hasClass("active");
-
-		var href = $(this).attr("href");
-
-		if(!tieneClaseI){
-			$("#serviciosA").addClass("active");
-		}
-
-		$("#pestanasTercero").slideUp(100, function(){
-
-			$("#menuServicios").slideDown(100, function(){
-
-				if(!tieneClaseI){
-					window.location.href = href;
-				}
-
-				$(".menuTerciario").hide();
-			});
-
-		});
+		clickElementoPrimarioConSecund(this);
 	});
 
 	$("#contactosA").click(function(){
 
-		var tieneClaseI = $(this).hasClass("active");
-
-		var href = $(this).attr("href");
-
-		$("#pestanasTercero").slideUp(100, function(){
-
-			$("#menuServicios").slideUp(100, function(){
-
-				if(!tieneClaseI){
-					window.location.href = href;
-					$("#contactosA").addClass("active");
-				}
-
-				$(".menuTerciario").hide();
-			});
-
-		});
+		clickElementoPrimarioSinSecund(this);
 	});
 
 	$("#quienesA").click(function(){
 
-		var tieneClaseI = $(this).hasClass("active");
-
-		var href = $(this).attr("href");
-
-		$("#pestanasTercero").slideUp(100, function(){
-
-			$("#menuServicios").slideUp(100, function(){
-
-				if(!tieneClaseI){
-					window.location.href = href;
-					$("#quienesA").addClass("active");
-				}
-
-				$(".menuTerciario").hide();
-			});
-
-		});
+		clickElementoPrimarioSinSecund(this);
 	});
 
 	//-------------------
@@ -128,75 +42,18 @@ $(document).ready(function(){
 
 	$("#aireB").click(function(){
 
-		$("#pestanasTercero").finish();
-
-		if($("#ofertasA").hasClass("active")){
-
-			if(!$(this).hasClass("active")){
-				window.location.href = "";
-			}
-		}
-		else{
-		
-			$("#menuServicios button").removeClass("active");
-			$("#aireB").addClass("active");
-
-			$("#pestanasTercero").slideUp(100, function(){
-
-				$(".menuTerciario").hide();
-				$("#aireC").show();
-				$("#pestanasTercero").slideDown(100);
-			});
-		}
+		clickElementoSecundario(this, "#aireC");
 	});
 
 	$("#calefaccionB").click(function(){
 
-		$("#pestanasTercero").finish();
-
-		if($("#ofertasA").hasClass("active")){
-
-			if(!$(this).hasClass("active")){
-				window.location.href = "";
-			}
-		}
-		else{
-
-			$("#menuServicios button").removeClass("active");
-			$("#calefaccionB").addClass("active");
-
-			$("#pestanasTercero").slideUp(100, function(){
-
-				$(".menuTerciario").hide();
-				$("#calefaccionC").show();
-				$("#pestanasTercero").slideDown(100);
-			});
-		}
+		clickElementoSecundario(this, "#calefaccionC");
 
 	});
 
 	$("#gasB").click(function(){
 
-		$("#pestanasTercero").finish();
-
-		if($("#ofertasA").hasClass("active")){
-
-			if(!$(this).hasClass("active")){
-				window.location.href = "";
-			}
-		}
-		else{
-
-			$("#menuServicios button").removeClass("active");
-			$("#gasB").addClass("active");
-
-			$("#pestanasTercero").slideUp(100, function(){
-
-				$(".menuTerciario").hide();
-				$("#gasC").show();
-				$("#pestanasTercero").slideDown(100);
-			});
-		}
+		clickElementoSecundario(this, "#gasC");
 
 	});
 
@@ -206,101 +63,162 @@ $(document).ready(function(){
 
 	$("#ofertasAireC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("ofertasAireC");
-
-		if(tieneClaseI)
-			window.location.href = "";
+		clickElementoTerciario(this);
 
 	});
 
 	$("#montajeAireC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("montajeAireC");
-
-		if(tieneClaseI)
-			window.location.href = "";
-
+		clickElementoTerciario(this);
 
 	});
 
 	$("#conductosAireC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("conductosAireC");
-
-		if(tieneClaseI)
-			window.location.href = "";
+		clickElementoTerciario(this);
 	});
 
 	$("#instalacionAireC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("instalacionAireC");
-
-		if(tieneClaseI)
-			window.location.href = "";
+		clickElementoTerciario(this);
 
 	});
 
 	$("#mantenimientoAireC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("mantenimientoAireC");
-
-		if(tieneClaseI)
-			window.location.href = "";
+		clickElementoTerciario(this);
 
 	});
 
 
 	$("#ofertasCalefaccionC").click(function(){
-
-		var tieneClaseI = $(this).hasClass("ofertasCalefaccionC");
-
-		if(tieneClaseI)
-			window.location.href = "";
+		
+		clickElementoTerciario(this);
 
 	});
 
 
 	$("#mantenimientoCalefaccionC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("mantenimientoCalefaccionC");
-
-		if(tieneClaseI)
-			window.location.href = "";
+		clickElementoTerciario(this);
 
 	});
 
 
 	$("#ofertasGasC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("ofertasGasC");
-
-		if(tieneClaseI)
-			window.location.href = "";
+		clickElementoTerciario(this);
 
 	});
 
 	$("#montajeGasC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("montajeGasC");
-
-		if(tieneClaseI)
-			window.location.href = "";
+		clickElementoTerciario(this);
 
 	});
 
 	$("#mantenimientoGasC").click(function(){
 
-		var tieneClaseI = $(this).hasClass("mantenimientoGasC");
-
-		if(tieneClaseI)
-			window.location.href = "";
-
+		clickElementoTerciario(this);
 	});
 
 });
 
+function clickElementoTerciario(element){
 
+	var tieneClaseI = $(element).hasClass("active");
 
+	if(!tieneClaseI)
+	{
+		$(element).addClass("active");	
+		window.location.href = $(element).attr("href");
+	}
 
+}
 
+function clickElementoSecundario(element, aDescubrir){
+
+	$("#pestanasTercero").finish();
+
+	if($("#ofertasA").hasClass("active")){
+
+		if(!$(element).hasClass("active")){
+			window.location.href = $(element).attr("href");
+		}
+	}
+	else{
+		
+		$("#menuServicios button").removeClass("active");
+		$(element).addClass("active");
+
+		$("#pestanasTercero").slideUp(100, function(){
+
+			$(".menuTerciario").hide();
+			$(aDescubrir).show();
+			$("#pestanasTercero").slideDown(100);
+		});
+	}
+}
+
+function clickElementoPrimarioSinSecund(element){
+
+	var tieneClaseI = $(element).hasClass("active");
+
+	var href = $(element).attr("href");
+
+	if(!tieneClaseI){
+		$(".menuTerciario .navPart").removeClass("active");
+		$(element).addClass("active");
+	}
+
+	$("#pestanasTercero").slideUp(100, function(){
+
+		$("#menuServicios").slideUp(100, function(){
+
+			if(!tieneClaseI){
+
+				window.location.href = href;
+
+			}
+
+			$(".menuTerciario").hide();
+		});
+
+	});
+}
+
+function clickElementoPrimarioConSecund(element){
+
+	var tieneClaseI = $(element).hasClass("active");
+
+	var href = $(element).attr("href");
+
+	if(!tieneClaseI){
+		$("#pestanasTercero .navPart").removeClass("active");
+		$(element).addClass("active");
+	}
+
+	$("#pestanasTercero").slideUp(100, function(){
+
+		$("#menuServicios").slideDown(100, function(){
+
+			if(!tieneClaseI){
+
+				window.location.href = href;
+
+			}
+
+			$(".menuTerciario").hide();
+		});
+
+	});
+}
+
+function inicializaPagina(){
+
+	$("#pestanasTercero").hide();
+
+	$(".partePestana").hide();
+	$(".partePestana").fadeIn("slow");
+}
 
