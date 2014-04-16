@@ -143,6 +143,7 @@ function clickElementoSecundario(element, aDescubrir){
 	if($("#ofertasA").hasClass("active")){
 
 		if(!$(element).hasClass("active")){
+			$(element).addClass("active");
 			window.location.href = $(element).attr("href");
 		}
 	}
@@ -215,8 +216,6 @@ function clickElementoPrimarioConSecund(element){
 }
 
 function inicializaPagina(){
-
-	$("#pestanasTercero").hide();
 
 	$(".partePestana").hide();
 	$(".partePestana").fadeIn("slow");
