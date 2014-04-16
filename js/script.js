@@ -12,93 +12,112 @@ $(document).ready(function(){
 
 		var href = $(this).attr("href");
 
-		$("#pestanasTercero").slideUp(200, function(){
+		if(!tieneClaseI){
+			$(".inicioA").addClass("active");
+		}
 
-			if(!tieneClaseI){
+		$("#pestanasTercero").slideUp(100, function(){
 
-				window.location.href = href;
-				$(".inicioA").addClass("active");
+			$("#menuServicios").slideDown(100, function(){
 
-			}
+				if(!tieneClaseI){
+					window.location.href = href;
+				}
 
-			$(".menuTerciario").hide();
+				$(".menuTerciario").hide();
+			});
+
 		});
 		
 	});
 
 	$("#ofertasA").click(function(){
 
-		var esId = $(this).hasClass("active");
+		var tieneClaseI = $(this).hasClass("active");
 
 		var href = $(this).attr("href");
 
-		$("#pestanasTercero").slideUp(200, function(){
+		if(!tieneClaseI){
+			$("#ofertasA").addClass("active");
+		}
 
-			if(!esId){
+		$("#pestanasTercero").slideUp(100, function(){
 
-				window.location.href = href;
-				$("#ofertasA").addClass("active");
+			$("#menuServicios").slideDown(100, function(){
 
-			}
+				if(!tieneClaseI){
+					window.location.href = href;
+				}
 
-			$(".menuTerciario").hide();
+				$(".menuTerciario").hide();
+			});
+
 		});
 	});
 
 	$("#serviciosA").click(function(){
 
-		var esId = $(this).hasClass("active");
+		var tieneClaseI = $(this).hasClass("active");
 
 		var href = $(this).attr("href");
 
-		$("#pestanasTercero").slideUp(200, function(){
+		if(!tieneClaseI){
+			$("#serviciosA").addClass("active");
+		}
 
-			if(!esId){
+		$("#pestanasTercero").slideUp(100, function(){
 
-				window.location.href = href;
-				$("#serviciosA").addClass("active");
+			$("#menuServicios").slideDown(100, function(){
 
-			}
+				if(!tieneClaseI){
+					window.location.href = href;
+				}
 
-			$(".menuTerciario").hide();
+				$(".menuTerciario").hide();
+			});
+
 		});
 	});
 
 	$("#contactosA").click(function(){
 
-		var esId = $(this).hasClass("active");
+		var tieneClaseI = $(this).hasClass("active");
 
 		var href = $(this).attr("href");
 
-		$("#pestanasTercero").slideUp(200, function(){
+		$("#pestanasTercero").slideUp(100, function(){
 
-			if(!esId){
+			$("#menuServicios").slideUp(100, function(){
 
-				window.location.href = href;
-				$("#contactosA").addClass("active");
+				if(!tieneClaseI){
+					window.location.href = href;
+					$("#contactosA").addClass("active");
+				}
 
-			}
+				$(".menuTerciario").hide();
+			});
 
-			$(".menuTerciario").hide();
 		});
 	});
 
 	$("#quienesA").click(function(){
 
-		var esId = $(this).hasClass("active");
+		var tieneClaseI = $(this).hasClass("active");
 
 		var href = $(this).attr("href");
 
-		$("#pestanasTercero").slideUp(200, function(){
+		$("#pestanasTercero").slideUp(100, function(){
 
-			if(!esId){
+			$("#menuServicios").slideUp(100, function(){
 
-				window.location.href = href;
-				$("#quienesA").addClass("active");
+				if(!tieneClaseI){
+					window.location.href = href;
+					$("#quienesA").addClass("active");
+				}
 
-			}
+				$(".menuTerciario").hide();
+			});
 
-			$(".menuTerciario").hide();
 		});
 	});
 
@@ -113,19 +132,20 @@ $(document).ready(function(){
 
 		if($("#ofertasA").hasClass("active")){
 
-			$("#cuerpoPestana>.partePestana:not(#inicio)");
-			window.location.href = "";
+			if(!$(this).hasClass("active")){
+				window.location.href = "";
+			}
 		}
 		else{
 		
 			$("#menuServicios button").removeClass("active");
 			$("#aireB").addClass("active");
 
-			$("#pestanasTercero").slideUp(200, function(){
+			$("#pestanasTercero").slideUp(100, function(){
 
 				$(".menuTerciario").hide();
 				$("#aireC").show();
-				$("#pestanasTercero").slideDown(200);
+				$("#pestanasTercero").slideDown(100);
 			});
 		}
 	});
@@ -136,19 +156,20 @@ $(document).ready(function(){
 
 		if($("#ofertasA").hasClass("active")){
 
-			$("#cuerpoPestana>.partePestana:not(#inicio)");
-			window.location.href = "";
+			if(!$(this).hasClass("active")){
+				window.location.href = "";
+			}
 		}
 		else{
 
 			$("#menuServicios button").removeClass("active");
 			$("#calefaccionB").addClass("active");
 
-			$("#pestanasTercero").slideUp(200, function(){
+			$("#pestanasTercero").slideUp(100, function(){
 
 				$(".menuTerciario").hide();
 				$("#calefaccionC").show();
-				$("#pestanasTercero").slideDown(200);
+				$("#pestanasTercero").slideDown(100);
 			});
 		}
 
@@ -160,19 +181,20 @@ $(document).ready(function(){
 
 		if($("#ofertasA").hasClass("active")){
 
-			$("#cuerpoPestana>.partePestana:not(#inicio)");
-			window.location.href = "";
+			if(!$(this).hasClass("active")){
+				window.location.href = "";
+			}
 		}
 		else{
 
 			$("#menuServicios button").removeClass("active");
 			$("#gasB").addClass("active");
 
-			$("#pestanasTercero").slideUp(200, function(){
+			$("#pestanasTercero").slideUp(100, function(){
 
 				$(".menuTerciario").hide();
 				$("#gasC").show();
-				$("#pestanasTercero").slideDown(200);
+				$("#pestanasTercero").slideDown(100);
 			});
 		}
 
