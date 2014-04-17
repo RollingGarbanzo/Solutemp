@@ -121,7 +121,7 @@ $(document).ready(function(){
 
 		clickElementoTerciario(this);
 	});
-
+	
 });
 
 function clickElementoTerciario(element){

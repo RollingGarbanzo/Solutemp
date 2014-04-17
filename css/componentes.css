@@ -10,7 +10,6 @@
 	background-color: #BBBBBB;
 	border: 1px solid;
 	border-color: grey;
-
 }
 
 .oferta>div:first-child{
@@ -61,7 +60,6 @@
 
 	font-weight: bold;
 	color: darkred;
-
 }
 
 .oferta>ul{
@@ -99,7 +97,6 @@
 	font-size: 12;
 
 	float: left;
-
 }
 
 .oferta>a:hover{
@@ -134,6 +131,9 @@
 /*- OFERTA -*/
 /*----------*/
 
+#prueba{
+	word-wrap: break-word;
+}
 /*-------------------------*/
 /*- MODIFICACIONES PAGINA -*/
 /*-------------------------*/
