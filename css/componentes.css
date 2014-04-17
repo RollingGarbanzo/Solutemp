@@ -140,6 +140,13 @@
 
 #servicios{
 	text-align: justify;
+
+}
+
+.informacionServicios{
+	width: 45%;
+	float: right;
+	text-align: justify;
 }
 
 
