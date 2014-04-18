@@ -21,10 +21,12 @@
 
 	border-bottom: 1px solid;
 	border-color: grey;
+	font-weight: bold;
 
 	background-color:  #5C2ADA;
 
 	text-align: center;
+	font-size: small;
 
 	overflow: hidden;
 
