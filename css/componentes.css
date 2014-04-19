@@ -47,7 +47,6 @@
 	border-color: grey;
 
 	background-color: red;
-
 }
 
 .oferta>div:nth-child(3){
@@ -116,7 +115,6 @@
 	cursor: pointer;
 
 	float: left;
-
 }
 
 .bolsaOfertas{
@@ -126,23 +124,51 @@
 	width: 100%;
 
 	float: left;
-
 }
 
-/*----------*/
-/*- OFERTA -*/
-/*----------*/
+/*-----------------*/
+/*----CONTACTO-----*/
+/*-----------------*/
 
-#prueba{
-	word-wrap: break-word;
+#textPerfilJavi{
+
+	float:left;
+
+	margin-left: 1em;
+	margin-top: 5%; 
+
+	text-align: left;
+	text-indent: 2em;
+	width: 60%;
 }
+
+#perfilJavi img{
+
+	float: left;
+
+	border: 1px solid;
+	border-radius: 2px;
+
+	padding: 2px;
+}
+
+#googleMaps{
+
+	min-height: 300px;
+	min-width: 350px;
+
+	width: 55%;
+	height: 50%;
+}
+
 /*-------------------------*/
 /*- MODIFICACIONES PAGINA -*/
 /*-------------------------*/
 
+
+
 #servicios{
 	text-align: justify;
-
 }
 
 .informacionServicios{
@@ -151,6 +177,36 @@
 	text-align: justify;
 }
 
+/*-------------------------*/
+/*-        BOTONES         */
+/*-------------------------*/
+
+#pestanas .btn-group, #menuServicios .btn-group{
+
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+/*-------------------------*/
+/*--OFERTAS CUERPO INICIO--*/
+/*-------------------------*/
+
+#ofertasCuerpoInicio{
+
+	width: 100%;
+
+	margin-bottom: 3em;
+
+	float: left;
+}
+
+#ofertasCuerpoInicio .oferta{
+
+	float: left;
+
+	margin-left: 1.5em;
+
+	margin-top: 1em;
+}
 
 /*-------------------------*/
 /*- MODIFICACIONES PAGINA -*/
