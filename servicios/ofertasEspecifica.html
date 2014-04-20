@@ -2,20 +2,20 @@
 
   <head>
 	  <title>Solutemp</title>
-	  <link rel="stylesheet" type="text/css" href="./bootstrapDefault/css/bootstrap.css">
-	  <link rel="stylesheet" type="text/css" href="./bootstrapDefault/css/bootstrap-theme.css">
-	  <link rel="stylesheet" type="text/css" href="./css/slideshow.css">
-	  <link rel="stylesheet" type="text/css" href="./css/componentes.css">
-	  <link rel="stylesheet" type="text/css" href="./css/base_css.css">
+	  <link rel="stylesheet" type="text/css" href="../bootstrapDefault/css/bootstrap.css">
+	  <link rel="stylesheet" type="text/css" href="../bootstrapDefault/css/bootstrap-theme.css">
+	  <link rel="stylesheet" type="text/css" href="../css/slideshow.css">
+	  <link rel="stylesheet" type="text/css" href="../css/componentes.css">
+	  <link rel="stylesheet" type="text/css" href="../css/base_css.css">
 	  <meta charset='utf-8'/>
 	  
 
 	  <a href="#Inicio"></a>
 
 	  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-	  <script src="./js/bootstrap.js"></script>
-  	  <script type="text/javascript" src="./js/script.js"></script>
-  	  <script type="text/javascript" src="./js/bibliotecaOfertas.js"></script>
+	  <script src="../js/bootstrap.js"></script>
+  	  <script type="text/javascript" src="../js/script.js"></script>
+  	  <script type="text/javascript" src="../js/bibliotecaOfertas.js"></script>
 	  
   </head>
   <body>
@@ -27,14 +27,14 @@
 	    <div id="encabezado">
 	    
 	    	<div id="encabezadoImagen">
-	    		<a href="index.html"><img src="./img/solutemp_encabezado_v2.png"></a>
+	    		<a href="index.html"><img src="../img/solutemp_encabezado_v2.png"></a>
 	    	</div>
 
 	    </div>
 
 	    <div id="icono">
 
-	    	<img src="./img/solutemp_telefonos.png">
+	    	<img src="../img/solutemp_telefonos.png">
 
 	    </div>
 	</div>
@@ -45,23 +45,23 @@
 	   		<div id="pestanas">
 
 	   			<div class="btn-group">
-				  <button type="button" class="btn btn-default inicioA" href="./index.html">Inicio</button>
-				  <button type="button" class="btn btn-default" id="ofertasA" href="./servicios/ofertas.html">Ofertas</button>
-				  <button type="button" class="btn btn-default" id="serviciosA" href="./servicios.html">Servicios</button>
-				  <button type="button" class="btn btn-default active" id="contactosA" href="./contacto.html">Contacto</button>
-				  <button type="button" class="btn btn-default" id="quienesA" href="./quienes.html">Quienes somos...</button>
+				  <button type="button" class="btn btn-default inicioA" href="../index.html">Inicio</button>
+				  <button type="button" class="btn btn-default active" id="ofertasA" href="./ofertas.html" onclick="window.location.href = './ofertas.html';">Ofertas</button>
+				  <button type="button" class="btn btn-default" id="serviciosA" href="../servicios.html">Servicios</button>
+				  <button type="button" class="btn btn-default" id="contactosA" href="../contacto.html">Contacto</button>
+				  <button type="button" class="btn btn-default" id="quienesA" href="../quienes.html">Quienes somos...</button>
 				</div>
 
 			</div>
 
-			<div hidden id="menuServicios">
+			<div id="menuServicios">
 
-				<div><strong><div class="breadcrums">Servicios</div></strong></div>
+				<div><strong><div class="breadcrums">Ofertas</div></strong></div>
 
 				<div class="btn-group">
-				  <button id="aireB" type="button" class="btn btn-default" href="./index.html"><img src="./img/iconos/aire.png">Aire acondicionado</button>
-				  <button id="calefaccionB" type="button" class="btn btn-default" href="./index.html"><img src="./img/iconos/calefaccion.png">Calderas y Calefacción</button>
-				  <button id="gasB" type="button" class="btn btn-default" href="./index.html"><img src="./img/iconos/gas.png">Gas</button>
+				  <button id="aireB" type="button" class="btn btn-default" href="./ofertasAire.html"><img src="../img/iconos/aire.png">Aire acondicionado</button>
+				  <button id="calefaccionB" type="button" class="btn btn-default" href="./ofertasCalefaccion.html"><img src="../img/iconos/calefaccion.png">Calderas y Calefacción</button>
+				  <button id="gasB" type="button" class="btn btn-default" href="./ofertasGas.html"><img src="../img/iconos/gas.png">Gas</button>
 				</div>
 
 			</div>
@@ -104,74 +104,17 @@
 
 				<div class="partePestana">
 
-					<div id="infContactos">
-						<strong>Contacto</strong> <br>
-						Javier Gonzalez Julian <br>
-						Travesia de la Cañada nº10 <br>
-						28850 - Torrejon de Ardoz - Madrid <br>
-						sloutempclimatizacion@gmail.com
-					</div>
+					<!--AQUI VA EL CUERPO DE LA OFERTA, SE INSERTARA POR JQuery -->
 
-					<br>
-					
-					<div id="tablaContacto">
-					
-						<strong> Horario de apertura </strong>
-						<br>
-						<br>
+					<script type="text/javascript">
 
-						<table>
-							<tr>
-							  <th><strong>Lunes</strong></th>
-							  <th><strong>Martes</strong></th>
-							  <th><strong>Miercoles</strong></th>
-							  <th><strong>Jueves</strong></th>
-							  <th><strong>Viernes</strong></th>
-							  <th><strong>Sabado</strong></th>
-							</tr>
-							 
-							<tr>
-							  <td>8:00 - 14:00</td>
-							  <td>8:00 - 14:00</td>
-							  <td>8:00 - 14:00</td>
-							  <td>8:00 - 14:00</td>
-							  <td>8:00 - 14:00</td>
-							  <td rowspan="2">8:00 - 14:00</td>
 
-							</tr>
-							 
-							<tr>
-							  <td>16:00 - 20:00</td>
-							  <td>16:00 - 20:00</td>
-							  <td>16:00 - 20:00</td>
-							  <td>16:00 - 20:00</td>
-							  <td>16:00 - 20:00</td>
-							  
-							</tr>
+						$(".partePestana").load("prueba.txt #"+getUrlVars()["q"]);
 
-						</table>
-					</div>
+					</script>
 
-					<br>
+					<!--AQUI VA EL CUERPO DE LA OFERTA, SE INSERTARA POR JQuery -->
 
-					<iframe id="googleMaps" src="https://mapsengine.google.com/map/u/0/embed?mid=zlTXQik3217k.kuzDWO0vT4C4"></iframe>
-
-					<div id="dropDownFormulario">
-						<fieldset id="formularioEmail">
-							<legend>Contacte con nosotros enviando un mensaje:</legend>
-
-							<form>
-								Autor:<input type="text" id="autorForm" placeholder="Diganos quien es..."> <br>
-								Asunto:<input type="text" id="asuntoForm" placeholder="Especifique aqui el asunto..."> <br>
-								<textarea type="text" id="mensajeEmailForm" placeholder="Introduzca aqui su mensaje..."></textarea> <br>
-
-								<button type="button" class="btn btn-default" id="botonEmail">Enviar</button>
-							</form>
-
-						</fieldset>
-
-					</div>
-					<div class="toggleForm">O puede enviarnos un mensaje... <img src="./img/iconos/flecha_abajo.png"></div>
 
 				</div> <!--CUERPO PESTANA INICIO-->
 			</div><!--CUERPO PESTANA-->
@@ -185,7 +128,7 @@
 
 		<div id="marcas">
 			<div ><h4><u>Marcas recomendadas:</u></h4></div>
-			<img src="./img/marcas.jpg">
+			<img src="../img/marcas.jpg">
 		</div>
 
 	</div>
@@ -248,7 +191,7 @@
 	<div id="bottom">
 
 
-		<strong>Webmaster:</strong>  <strong>Javier Garcia:</strong> iluzbel@hotmail.com      
+		<strong>Webmasters:</strong>  <strong>Javier Garcia:</strong> iluzbel@hotmail.com       <strong>Jose Antonio Alvarez:</strong> aricatillo@gmail.com
 	</div>
 
   </body>

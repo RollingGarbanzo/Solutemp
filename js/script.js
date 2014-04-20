@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
 
@@ -122,6 +121,42 @@ $(document).ready(function(){
 		clickElementoTerciario(this);
 	});
 	
+
+
+	/*--------------
+	---FORMULARIO --
+	----------------*/
+
+	$(".toggleForm").click(function(){
+
+		$("#dropDownFormulario").slideToggle();
+
+		if(!$(".toggleForm").hasClass("active"))
+			$(".toggleForm").addClass("active");
+		else
+			$(".toggleForm").removeClass("active");
+	});
+
+
+	$("#botonEmail").click(function(){
+
+		$.ajax({
+		    url : "./form.php",
+		    type: "POST",
+		    data : {autor : $("#autorForm").val(), asunto: $("#asuntoForm").val() ,mensaje : $("#mensajeEmailForm").val()},
+		    success: function(data)
+		    {
+		    	alert(data);
+		    },
+		    error: function (jqXHR, textStatus, errorThrown)
+		    {
+		 	alert("Problema con el fichero php: "+errorThrown);
+		    }
+		});
+
+	});
+
+
 });
 
 function clickElementoTerciario(element){
@@ -152,11 +187,11 @@ function clickElementoSecundario(element, aDescubrir){
 		$("#menuServicios button").removeClass("active");
 		$(element).addClass("active");
 
-		$("#pestanasTercero").slideUp(100, function(){
+		$("#pestanasTercero").slideUp(200, function(){
 
 			$(".menuTerciario").hide();
 			$(aDescubrir).show();
-			$("#pestanasTercero").slideDown(100);
+			$("#pestanasTercero").slideDown(200);
 		});
 	}
 }
@@ -174,9 +209,9 @@ function clickElementoPrimarioSinSecund(element){
 		$(element).addClass("active");
 	}
 
-	$("#pestanasTercero").slideUp(100, function(){
+	$("#pestanasTercero").slideUp(200, function(){
 
-		$("#menuServicios").slideUp(100, function(){
+		$("#menuServicios").slideUp(200, function(){
 
 			if(!tieneClaseI){
 
@@ -203,11 +238,11 @@ function clickElementoPrimarioConSecund(element){
 		$(element).addClass("active");
 	}
 
-	$("#pestanasTercero").slideUp(100, function(){
+	$("#pestanasTercero").slideUp(200, function(){
 
 		$(".menuTerciario .navPart").removeClass("active");
 
-		$("#menuServicios").slideDown(100, function(){
+		$("#menuServicios").slideDown(200, function(){
 
 			if(!tieneClaseI){
 
@@ -223,7 +258,23 @@ function clickElementoPrimarioConSecund(element){
 
 function inicializaPagina(){
 
+	$("#dropDownFormulario").hide();
 	$(".partePestana").hide();
 	$(".partePestana").fadeIn("slow");
 }
 
+
+//Lee los valores GET de un URL y lo devuelve como un array de Strings.
+	
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
