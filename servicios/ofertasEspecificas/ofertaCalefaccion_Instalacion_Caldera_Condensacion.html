@@ -1,0 +1,207 @@
+<html>
+
+  <head>
+	  <title>Solutemp</title>
+	  <link rel="stylesheet" type="text/css" href="../../bootstrapDefault/css/bootstrap.css">
+	  <link rel="stylesheet" type="text/css" href="../../bootstrapDefault/css/bootstrap-theme.css">
+	  <link rel="stylesheet" type="text/css" href="../../css/slideshow.css">
+	  <link rel="stylesheet" type="text/css" href="../../css/componentes.css">
+	  <link rel="stylesheet" type="text/css" href="../../css/base_css.css">
+	  <meta charset='utf-8'/>
+	  
+
+	  <a href="#Inicio"></a>
+
+	  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
+	  <script src="../../js/bootstrap.js"></script>
+  	  <script type="text/javascript" src="../../js/script.js"></script>
+  	  <script type="text/javascript" src="../../js/bibliotecaOfertas.js"></script>
+	  
+  </head>
+  <body>
+
+  	<div id="centrado"><!--CENTRADO CONTIENE TODO EL CUERPO Y EL HEADING PARA CENTRARLO CON UN ABSOLUTE-->
+
+  	<div id = "heading">
+
+	    <div id="encabezado">
+	    
+	    	<div id="encabezadoImagen">
+	    		<a href="../../index.html"><img src="../../img/solutemp_encabezado_v2.png"></a>
+	    	</div>
+
+	    </div>
+
+	    <div id="icono">
+
+	    	<img src="../../img/solutemp_telefonos.png">
+
+	    </div>
+	</div>
+
+    <div id="cuerpo">
+
+	   	<div id="tabla">
+	   		<div id="pestanas">
+
+	   			<div class="btn-group">
+				  <button type="button" class="btn btn-default inicioA" href="../../index.html">Inicio</button>
+				  <button type="button" class="btn btn-default active" id="ofertasA" href="../ofertas.html" onclick="window.location.href = '../ofertas.html';">Ofertas</button>
+				  <button type="button" class="btn btn-default" id="serviciosA" href="../../servicios.html">Servicios</button>
+				  <button type="button" class="btn btn-default" id="contactosA" href="../../contacto.html">Contacto</button>
+				  <button type="button" class="btn btn-default" id="quienesA" href="../../quienes.html">Quienes somos...</button>
+				</div>
+
+			</div>
+
+			<div id="menuServicios">
+
+				<div><strong><div class="breadcrums">Ofertas</div></strong></div>
+
+				<div class="btn-group">
+				  <button id="aireB" type="button" class="btn btn-default" href="../ofertasAire.html"><img src="../../img/iconos/aire.png">Aire acondicionado</button>
+				  <button id="calefaccionB" type="button" class="btn btn-default" href="../ofertasCalefaccion.html"><img src="../../img/iconos/calefaccion.png">Calderas y Calefacción</button>
+				  <button id="gasB" type="button" class="btn btn-default" href="../ofertasGas.html"><img src="../../img/iconos/gas.png">Gas</button>
+				</div>
+
+			</div>
+
+			<!--INTERIOR MENU SERVICIOS -->
+
+			<div id="pestanasTercero" hidden>
+				<div class="menuTerciario" id="aireC">
+					<div><strong>Servicios > Aire Acondicionado</strong></div>
+
+					<div class="navPart" id="ofertasAireC" href="./index.html">Ofertas</div>
+					<div class="navPart" id="montajeAireC" href="./index.html">Montaje</div>
+					<div class="navPart" id="conductosAireC" href="./index.html">Ofertas Conductos</div>
+					<div class="navPart" id="instalacionAireC" href="./index.html">Solo Instalacion</div>
+					<div class="navPart" id="mantenimientoAireC" href="./index.html">Mantenimiento</div>
+
+				</div>
+
+				<div class="menuTerciario" id="calefaccionC">
+					<div><strong>Servicios > Calderas y Calefaccion</strong></div>
+
+					<div class="navPart" id="ofertasCalefaccionC" href="./index.html">Ofertas</div>
+					<div class="navPart" id="mantenimientoCalefaccionC" href="./index.html">Mantenimiento</div>
+
+				</div>
+				<div class="menuTerciario" id="gasC">
+					<div><strong>Servicios > Gas</strong></div>
+
+					<div class="navPart" id="ofertasGasC" href="./index.html">Ofertas</div>
+					<div class="navPart" id="montajeGasC" href="./index.html">Montaje</div>
+					<div class="navPart" id="mantenimientoGasC" href="./index.html">Mantenimiento</div>
+
+				</div>
+
+			</div>
+
+			<!-- FIN INTERIOR MENU SERVICIOS-->
+
+			<div id="cuerpoPestana">
+
+				<div class="partePestana" id="ofertasEspecificas">
+
+					<!--AQUI VA EL CUERPO DE LA OFERTA, SE INSERTARA POR JQuery -->
+
+								<div>
+									Instalación Caldera Condensación
+								</div>
+
+								<img src="../../img/Ofertas/calefaccion/ofertas/4.jpg">
+
+								<div>340 €</div>
+
+								<ul>
+									<li>Instalacion completa</li>
+									<li>IVA incluido</li>
+									<li>garantia 2 años</li>
+								</ul>		
+
+
+					<!--AQUI VA EL CUERPO DE LA OFERTA, SE INSERTARA POR JQuery -->
+
+
+				</div> <!--CUERPO PESTANA INICIO-->
+			</div><!--CUERPO PESTANA-->
+
+
+		</div>
+	</div><!-- CUERPO-->
+	</div><!--RELLENO IZQUIERDO (PARA MANTENER FLOAT)-->
+
+	<div id="prePie">
+
+		<div id="marcas">
+			<div ><h4><u>Marcas recomendadas:</u></h4></div>
+			<img src="../../img/marcas.jpg">
+		</div>
+
+	</div>
+
+	<!-- PIE DE PAGINA-->
+
+	<div id="pieDePagina">
+
+		<div class = "interiorPie">
+			<div class = "contenedorPie">
+
+				<strong>Tiendas Recomendadas</strong>
+
+				<ul>
+					<li><a href="http://www.elcorteingles.es/tienda/electrodomesticos/browse/subcategory_horiz_showCase.jsp?categoryId=999.1389687609">Corte Ingles</a></li>
+					<li><a href="https://www.leroymerlin.es/productos/climatizacion/aire_acondicionado_fijo.html">LeroyMerlin</a></li>
+					<li><a href="http://www.airefrio.com/aire-acondicionado.html">AireFrio</a></li>
+					<li><a href="http://www.bricodepot.es/">Bricodepot</a></li>
+				</ul>
+
+
+			</div>
+
+		</div>
+
+		<div class = "interiorPie">
+
+			<div class = "contenedorPie">
+				<strong>Enclaces de Interes</strong>
+				
+				<ul>
+					<li><a href="http://dractecnic.blogspot.com.es/2007/06/como-reparar-un-equipo-de-aire.html">DratecniC</a></li>
+					<li><a href="http://www.ehowenespanol.com/reparar-aire-acondicionado-ventana-como_283398/">eHow en Español (Como reparar un aire acondiconado)</a></li>
+					<li><a href="http://www.taringa.net/posts/hazlo-tu-mismo/13770294/Arreglar-problema-de-aire-acondicionado-y-te-lo-muestro.html">Taringa! Arreglar problemas de...</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div class = "interiorPie">
+
+			<div class = "contenedorPie">
+
+				<strong>Contacto</strong>
+					<p>
+					Javier Gonzalez Julian <br>
+					Travesia de la Cañada nº10 <br>
+					28850 - Torrejon de Ardoz - Madrid <br>
+					sloutempclimatizacion@gmail.com
+					</p>
+
+
+			</div>
+
+		</div>
+
+	</div><!--VARIOS INFERIOR-->
+
+	<div id="bottom">
+
+
+		<strong>Webmasters:</strong>  <strong>Javier Garcia:</strong> iluzbel@hotmail.com       <strong>Jose Antonio Alvarez:</strong> aricatillo@gmail.com
+	</div>
+
+  </body>
+  
+ </html>
