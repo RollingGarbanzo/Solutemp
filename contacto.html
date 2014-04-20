@@ -156,6 +156,14 @@
 
 					<iframe id="googleMaps" src="https://mapsengine.google.com/map/u/0/embed?mid=zlTXQik3217k.kuzDWO0vT4C4"></iframe>
 
+					<div id="successEmail">
+						<div class="alert alert-success"><strong>¡Gracias por contactarnos!</strong> responderemos a su mensaje lo mas pronto posible.</div>
+					</div>
+
+					<div id="errorEmail">
+						<div class="alert alert-danger"><strong>¡Ooops!</strong> ha habido un problema con el mensaje, pero no se preocupe, lo solucionaremos cuanto antes, intentelo mas tarde.</div>
+					</div>
+
 					<div id="dropDownFormulario">
 						<fieldset id="formularioEmail">
 							<legend>Contacte con nosotros enviando un mensaje:</legend>
@@ -163,6 +171,7 @@
 							<form>
 								Autor:<input type="text" id="autorForm" placeholder="Diganos quien es..."> <br>
 								Asunto:<input type="text" id="asuntoForm" placeholder="Especifique aqui el asunto..."> <br>
+								Email de contacto(su email):<input type="text" id="emailRespuestaForm" placeholder="Escriba aqui su email..."> <br>
 								<textarea type="text" id="mensajeEmailForm" placeholder="Introduzca aqui su mensaje..."></textarea> <br>
 
 								<button type="button" class="btn btn-default" id="botonEmail">Enviar</button>

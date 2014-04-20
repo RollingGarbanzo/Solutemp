@@ -129,6 +129,7 @@ $(document).ready(function(){
 
 	$(".toggleForm").click(function(){
 
+
 		$("#dropDownFormulario").slideToggle();
 
 		if(!$(".toggleForm").hasClass("active"))
@@ -140,17 +141,27 @@ $(document).ready(function(){
 
 	$("#botonEmail").click(function(){
 
+		$("#successEmail").fadeOut(150);
+		$("#errorEmail").fadeOut(150);		
+
+		if(!$(".toggleForm").hasClass("active"))
+			$(".toggleForm").addClass("active");
+		else
+			$(".toggleForm").removeClass("active");
+
 		$.ajax({
 		    url : "./form.php",
 		    type: "POST",
-		    data : {autor : $("#autorForm").val(), asunto: $("#asuntoForm").val() ,mensaje : $("#mensajeEmailForm").val()},
+		    data : {autor : $("#autorForm").val(),emailRespuesta : $("#emailRespuestaForm").val(), asunto: $("#asuntoForm").val() ,mensaje : $("#mensajeEmailForm").val()},
 		    success: function(data)
 		    {
-		    	alert(data);
+		    	$("#successEmail").fadeIn();
+		    	$("#dropDownFormulario").slideUp(200);
 		    },
 		    error: function (jqXHR, textStatus, errorThrown)
 		    {
-		 	alert("Problema con el fichero php: "+errorThrown);
+		    	$("#errorEmail").fadeIn();
+		    	$("#dropDownFormulario").slideUp(200);
 		    }
 		});
 
@@ -258,6 +269,8 @@ function clickElementoPrimarioConSecund(element){
 
 function inicializaPagina(){
 
+	$("#errorEmail").hide();
+	$("#successEmail").hide();
 	$("#dropDownFormulario").hide();
 	$(".partePestana").hide();
 	$(".partePestana").fadeIn("slow");
