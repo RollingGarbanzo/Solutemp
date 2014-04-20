@@ -2,20 +2,20 @@
 
   <head>
 	  <title>Solutemp</title>
-	  <link rel="stylesheet" type="text/css" href="../bootstrapDefault/css/bootstrap.css">
-	  <link rel="stylesheet" type="text/css" href="../bootstrapDefault/css/bootstrap-theme.css">
-	  <link rel="stylesheet" type="text/css" href="../css/slideshow.css">
-	  <link rel="stylesheet" type="text/css" href="../css/componentes.css">
-	  <link rel="stylesheet" type="text/css" href="../css/base_css.css">
+	  <link rel="stylesheet" type="text/css" href="../../bootstrapDefault/css/bootstrap.css">
+	  <link rel="stylesheet" type="text/css" href="../../bootstrapDefault/css/bootstrap-theme.css">
+	  <link rel="stylesheet" type="text/css" href="../../css/slideshow.css">
+	  <link rel="stylesheet" type="text/css" href="../../css/componentes.css">
+	  <link rel="stylesheet" type="text/css" href="../../css/base_css.css">
 	  <meta charset='utf-8'/>
 	  
 
 	  <a href="#Inicio"></a>
 
 	  <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
-	  <script src="../js/bootstrap.js"></script>
-  	  <script type="text/javascript" src="../js/script.js"></script>
-  	  <script type="text/javascript" src="../js/bibliotecaOfertas.js"></script>
+	  <script src="../../js/bootstrap.js"></script>
+  	  <script type="text/javascript" src="../../js/script.js"></script>
+  	  <script type="text/javascript" src="../../js/bibliotecaOfertas.js"></script>
 	  
   </head>
   <body>
@@ -27,14 +27,14 @@
 	    <div id="encabezado">
 	    
 	    	<div id="encabezadoImagen">
-	    		<a href="../index.html"><img src="../img/solutemp_encabezado_v2.png"></a>
+	    		<a href="../../index.html"><img src="../../img/solutemp_encabezado_v2.png"></a>
 	    	</div>
 
 	    </div>
 
 	    <div id="icono">
 
-	    	<img src="../img/solutemp_telefonos.png">
+	    	<img src="../../img/solutemp_telefonos.png">
 
 	    </div>
 	</div>
@@ -45,11 +45,11 @@
 	   		<div id="pestanas">
 
 	   			<div class="btn-group">
-				  <button type="button" class="btn btn-default inicioA" href="../index.html">Inicio</button>
-				  <button type="button" class="btn btn-default active" id="ofertasA" href="./ofertas.html" onclick="window.location.href = './ofertas.html';">Ofertas</button>
-				  <button type="button" class="btn btn-default" id="serviciosA" href="../servicios.html">Servicios</button>
-				  <button type="button" class="btn btn-default" id="contactosA" href="../contacto.html">Contacto</button>
-				  <button type="button" class="btn btn-default" id="quienesA" href="../quienes.html">Quienes somos...</button>
+				  <button type="button" class="btn btn-default inicioA" href="../../index.html">Inicio</button>
+				  <button type="button" class="btn btn-default active" id="ofertasA" href="../ofertas.html" onclick="window.location.href = '../ofertas.html';">Ofertas</button>
+				  <button type="button" class="btn btn-default" id="serviciosA" href="../../servicios.html">Servicios</button>
+				  <button type="button" class="btn btn-default" id="contactosA" href="../../contacto.html">Contacto</button>
+				  <button type="button" class="btn btn-default" id="quienesA" href="../../quienes.html">Quienes somos...</button>
 				</div>
 
 			</div>
@@ -59,9 +59,9 @@
 				<div><strong><div class="breadcrums">Ofertas</div></strong></div>
 
 				<div class="btn-group">
-				  <button id="aireB" type="button" class="btn btn-default" href="./ofertasAire.html"><img src="../img/iconos/aire.png">Aire acondicionado</button>
-				  <button id="calefaccionB" type="button" class="btn btn-default" href="./ofertasCalefaccion.html"><img src="../img/iconos/calefaccion.png">Calderas y Calefacción</button>
-				  <button id="gasB" type="button" class="btn btn-default" href="./ofertasGas.html"><img src="../img/iconos/gas.png">Gas</button>
+				  <button id="aireB" type="button" class="btn btn-default" href="../ofertasAire.html"><img src="../../img/iconos/aire.png">Aire acondicionado</button>
+				  <button id="calefaccionB" type="button" class="btn btn-default" href="../ofertasCalefaccion.html"><img src="../../img/iconos/calefaccion.png">Calderas y Calefacción</button>
+				  <button id="gasB" type="button" class="btn btn-default" href="../ofertasGas.html"><img src="../../img/iconos/gas.png">Gas</button>
 				</div>
 
 			</div>
@@ -102,16 +102,24 @@
 
 			<div id="cuerpoPestana">
 
-				<div class="partePestana">
+				<div class="partePestana" id="ofertasEspecificas">
 
 					<!--AQUI VA EL CUERPO DE LA OFERTA, SE INSERTARA POR JQuery -->
 
-					<script type="text/javascript">
+					<div>
+						Split Pared Inverter 1X1 Haier
+					</div>
 
+					<img src="../../img/Ofertas/aireacondicionado/aires/1.jpg">
 
-						$(".partePestana").load("prueba.txt #"+getUrlVars()["q"]);
+					<div>940 € </div>
 
-					</script>
+					<ul>
+						<li>2261 Fr/h</li>
+						<li>2855 Kcal/h</li>
+						<li>Instalación incluida</li>
+						<li>78,33€ x 12 meses sin interés</li>
+					</ul>						
 
 					<!--AQUI VA EL CUERPO DE LA OFERTA, SE INSERTARA POR JQuery -->
 
@@ -128,7 +136,7 @@
 
 		<div id="marcas">
 			<div ><h4><u>Marcas recomendadas:</u></h4></div>
-			<img src="../img/marcas.jpg">
+			<img src="../../img/marcas.jpg">
 		</div>
 
 	</div>
