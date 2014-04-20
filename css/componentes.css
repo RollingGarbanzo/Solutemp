@@ -377,7 +377,9 @@
 	font-size: 25;
 	font-weight: bold;
 
-	width: 60%;
+	margin-bottom: 0.5em;
+
+	min-width: 60%;
 
 	text-indent: 0.5em;
 
